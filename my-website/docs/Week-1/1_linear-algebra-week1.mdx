@@ -1,0 +1,948 @@
+---
+title: Linear Algebra – Week 1
+sidebar_label: Week 1 · Vectors, Matrices & Determinants
+description: Comprehensive GATE + ML notes covering vectors, matrix types, operations, determinants, and systems of linear equations — with pen-paper, Excel, pandas, and AWK practice.
+tags: [linear-algebra, gate, machine-learning, week1]
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+
+<Admonition type="tip" title="Learning Strategy">
+**GATE plan (score-focused):**
+
+1. **Concept (2–3 lines):** definition + 1 key identity.
+2. **Must-memorize results:** write a mini cheat-sheet (properties of transpose/inverse/determinant).
+3. **Timed practice:** 10–15 questions in **20 minutes**, then review mistakes.
+4. **Trap list:** maintain a short list of common errors (dimension mismatch, wrong sign after row swap, assuming $\det(A+B)=\det(A)+\det(B)$, etc.).
+
+**Minimum target for Week-1:**
+- Matrices: types + multiplication rules + transpose/inverse identities.
+- Determinants: row/column operations + fast evaluation + standard identities.
+</Admonition>
+
+---
+
+## 1. Vectors
+
+### 1.1 What is a Vector?
+
+A **vector** is an **ordered collection of numbers**. Order matters — `(1, 2)` ≠ `(2, 1)`.
+
+$$
+\vec{v} = \begin{pmatrix} a \\ b \\ c \end{pmatrix} \quad \text{(column vector — the default)} \qquad \vec{v}^T = \begin{pmatrix} a & b & c \end{pmatrix} \quad \text{(row vector)}
+$$
+
+> **Convention:** In linear algebra (and ML), **column vectors are the default**. When you write $(a, b, c)$ casually, it still represents a column vector unless explicitly transposed.
+
+### 1.2 Types of Vectors
+
+| Type | Description | Example |
+|---|---|---|
+| Column vector | $n \times 1$ matrix | $\begin{pmatrix}1\\2\\3\end{pmatrix}$ |
+| Row vector | $1 \times n$ matrix | $\begin{pmatrix}1 & 2 & 3\end{pmatrix}$ |
+| Zero vector | All entries are 0 | $\vec{0}$ |
+| Unit vector | Magnitude = 1 | $\hat{e}_1 = \begin{pmatrix}1\\0\\0\end{pmatrix}$ |
+
+### 1.3 Vector Operations
+
+#### Addition
+$$\vec{u} + \vec{v} = \begin{pmatrix}u_1 + v_1 \\ u_2 + v_2 \\ \vdots \end{pmatrix}$$
+
+**Geometric meaning:** Tip-to-tail rule (parallelogram law).
+
+#### Scalar Multiplication
+$$k\vec{v} = \begin{pmatrix}kv_1 \\ kv_2 \\ \vdots\end{pmatrix}$$
+
+**Geometric meaning:** Stretches ($|k|>1$), shrinks ($|k|<1$), or flips direction ($k<0$).
+
+#### Dot Product
+$$\vec{u} \cdot \vec{v} = \sum_{i} u_i v_i = |\vec{u}||\vec{v}|\cos\theta$$
+
+> **ML Connection 🤖:** Dot product measures similarity between feature vectors. The cosine similarity used in NLP and recommendation systems is derived directly from this.
+
+### 1.4 Practice — Vector Operations
+
+<Tabs>
+<TabItem value="paper" label="✍️ Pen & Paper">
+
+**Problem:** Let $\vec{u} = (2, -1, 3)$ and $\vec{v} = (1, 4, -2)$.
+
+1. Compute $\vec{u} + \vec{v}$
+2. Compute $3\vec{u} - 2\vec{v}$
+3. Compute $\vec{u} \cdot \vec{v}$
+4. Find $|\vec{u}|$ (magnitude)
+
+**Solution:**
+1. $\vec{u} + \vec{v} = (3, 3, 1)$
+2. $3\vec{u} - 2\vec{v} = (6,-3,9) - (2,8,-4) = (4, -11, 13)$
+3. $\vec{u} \cdot \vec{v} = 2(1) + (-1)(4) + 3(-2) = 2 - 4 - 6 = -8$
+4. $|\vec{u}| = \sqrt{4+1+9} = \sqrt{14}$
+
+</TabItem>
+<TabItem value="excel" label="📊 Excel">
+
+```
+A1: u =    B1: 2    C1: -1    D1: 3
+A2: v =    B2: 1    C2:  4    D2: -2
+
+# Vector addition (row 3)
+B3: =B1+B2    C3: =C1+C2    D3: =D1+D2
+
+# Scalar multiplication 3u - 2v (row 4)
+B4: =3*B1 - 2*B2    C4: =3*C1 - 2*C2    D4: =3*D1 - 2*D2
+
+# Dot product (single cell)
+E5: =SUMPRODUCT(B1:D1, B2:D2)
+
+# Magnitude of u
+E6: =SQRT(SUMSQ(B1:D1))
+```
+
+</TabItem>
+<TabItem value="pandas" label="🐼 pandas">
+
+```python
+import numpy as np
+import pandas as pd
+
+# Input file format (vectors.csv):
+# u,v
+# 2,1
+# -1,4
+# 3,-2
+df = pd.read_csv("vectors.csv")
+u = df["u"].to_numpy(dtype=float)
+v = df["v"].to_numpy(dtype=float)
+
+print("u + v         =", u + v)
+print("3u - 2v       =", 3*u - 2*v)
+print("u · v         =", np.dot(u, v))
+print("|u|           =", np.linalg.norm(u))
+print("cos(angle)    =", np.dot(u,v) / (np.linalg.norm(u) * np.linalg.norm(v)))
+
+# Vector ops as a table
+df["u+v"] = df["u"] + df["v"]
+df["3u-2v"] = 3*df["u"] - 2*df["v"]
+print(df)
+```
+
+</TabItem>
+<TabItem value="awk" label="🦅 AWK">
+
+```bash
+# File: vectors.csv
+# u,v
+# 2,1
+# -1,4
+# 3,-2
+
+awk -F',' '
+NR==1 {next}  # skip header
+{u[NR-1]=$1; v[NR-1]=$2; n=NR-1}
+END {
+    for(i=1;i<=n;i++) {
+        sum[i]=u[i]+v[i]
+        expr[i]=3*u[i]-2*v[i]
+        dot += u[i]*v[i]
+        mag += u[i]*u[i]
+    }
+    printf("u+v =")
+    for(i=1;i<=n;i++) printf(" %g", sum[i])
+    printf("\n")
+
+    printf("3u-2v =")
+    for(i=1;i<=n;i++) printf(" %g", expr[i])
+    printf("\n")
+
+    printf("u.v = %g\n", dot)
+    printf("|u| = %g\n", sqrt(mag))
+}
+' vectors.csv
+```
+
+</TabItem>
+</Tabs>
+
+---
+
+## 2. Matrices
+
+### 2.1 What is a Matrix?
+
+A **matrix** is a **rectangular array of numbers** arranged in rows and columns.
+
+$$A_{m \times n} = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{pmatrix}$$
+
+<Admonition type="note" title="GATE View (Dimensions)">
+$A_{m\times n}$ represents a linear map $\mathbb{R}^n \to \mathbb{R}^m$.
+
+If $A$ is $m\times k$ and $B$ is $k\times n$, then $AB$ is $m\times n$.
+</Admonition>
+
+<Admonition type="caution" title="Common Traps (Matrices)">
+- $AB$ defined does **not** imply $BA$ is defined.
+- $AB=0$ does **not** imply $A=0$ or $B=0$.
+- You cannot “cancel” matrices in general (e.g., $AB=AC$ does not always imply $B=C$ unless $A$ is invertible).
+</Admonition>
+
+### 2.2 Matrix Types
+
+#### Square Matrix ($n \times n$)
+Same number of rows and columns.
+
+$$A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$$
+
+#### Diagonal Matrix
+Square matrix where all off-diagonal entries are zero.
+
+$$D = \begin{pmatrix} d_1 & 0 & 0 \\ 0 & d_2 & 0 \\ 0 & 0 & d_3 \end{pmatrix}$$
+
+#### Scalar Matrix
+Diagonal matrix where all diagonal entries are equal.
+
+$$S = \begin{pmatrix} k & 0 & 0 \\ 0 & k & 0 \\ 0 & 0 & k \end{pmatrix} = kI$$
+
+#### Identity Matrix ($I$)
+Scalar matrix with $k = 1$. Acts as the multiplicative identity: $AI = IA = A$.
+
+$$I_3 = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$$
+
+#### Upper Triangular Matrix (UTM)
+All entries **below** the diagonal are zero.
+
+$$U = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 4 & 5 \\ 0 & 0 & 6 \end{pmatrix}$$
+
+#### Lower Triangular Matrix (LTM)
+All entries **above** the diagonal are zero.
+
+$$L = \begin{pmatrix} 1 & 0 & 0 \\ 2 & 3 & 0 \\ 4 & 5 & 6 \end{pmatrix}$$
+
+> **GATE:** For triangular matrices, $\det(U)=\det(L)=\prod_i a_{ii}$.
+
+#### Symmetric Matrix
+$A = A^T$, i.e., $a_{ij} = a_{ji}$.
+
+$$S = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 5 & 4 \\ 3 & 4 & 6 \end{pmatrix}$$
+
+> **GATE:** Real symmetric matrices have **real eigenvalues** and are diagonalizable by an orthogonal matrix.
+
+#### Summary Table
+
+| Type | Condition | Key Property |
+|---|---|---|
+| Square | $m = n$ | Can have determinant, inverse, eigenvalues |
+| Diagonal | $a_{ij}=0$ for $i \neq j$ | Powers computed element-wise |
+| Scalar | $D$ with equal diagonal | $S^n = k^n I$ |
+| Identity | $I$ | $AI = IA = A$ |
+| UTM | $a_{ij}=0$ for $i > j$ | $\det = \prod d_{ii}$ |
+| LTM | $a_{ij}=0$ for $i < j$ | $\det = \prod d_{ii}$ |
+| Symmetric | $A = A^T$ | Real eigenvalues, orthogonal eigenvectors |
+
+---
+
+## 3. Matrix Operations & Properties
+
+### 3.1 Matrix Addition / Subtraction
+Element-wise. **Requires same dimensions.**
+
+$$(A \pm B)_{ij} = a_{ij} \pm b_{ij}$$
+
+### 3.2 Scalar Multiplication
+$$(kA)_{ij} = k \cdot a_{ij}$$
+
+### 3.3 Matrix Multiplication
+
+If $A$ is $m \times k$ and $B$ is $k \times n$, then $C = AB$ is $m \times n$:
+
+$$c_{ij} = \sum_{r=1}^{k} a_{ir} b_{rj}$$
+
+<Admonition type="caution">
+Matrix multiplication is **NOT commutative**: $AB \neq BA$ in general.
+</Admonition>
+
+#### Properties of Matrix Multiplication
+
+| Property | Formula |
+|---|---|
+| Associativity | $(AB)C = A(BC)$ |
+| Distributivity | $A(B+C) = AB + AC$ |
+| Identity | $AI = IA = A$ |
+| Transpose of product | $(AB)^T = B^T A^T$ |
+| Inverse of product | $(AB)^{-1} = B^{-1}A^{-1}$ |
+
+<Admonition type="tip" title="GATE Quick Checks (Operations)">
+- Non-commutative: $AB\neq BA$ usually; but transpose/inverse rules are reliable.
+- If $A$ is invertible: $AX=B \Rightarrow X=A^{-1}B$.
+- If $A$ is orthogonal: $A^{-1}=A^T$ and $\det(A)=\pm 1$.
+</Admonition>
+
+### 3.4 Transpose
+
+$(A^T)_{ij} = A_{ji}$
+
+**Properties:**
+- $(A^T)^T = A$
+- $(A + B)^T = A^T + B^T$
+- $(kA)^T = kA^T$
+- $(AB)^T = B^T A^T$ ← very commonly tested in GATE
+
+### 3.5 Practice — Matrix Multiplication
+
+<Tabs>
+<TabItem value="paper" label="✍️ Pen & Paper">
+
+**Problem:** Let $M = \begin{pmatrix}1 & 3 \\ 2 & 1\end{pmatrix}$. Find $x$ such that $M^2 + xM - 5I = 0$.
+
+**Step 1:** Compute $M^2$
+$$M^2 = \begin{pmatrix}1&3\\2&1\end{pmatrix}\begin{pmatrix}1&3\\2&1\end{pmatrix} = \begin{pmatrix}1+6 & 3+3\\ 2+2 & 6+1\end{pmatrix} = \begin{pmatrix}7&6\\4&7\end{pmatrix}$$
+
+**Step 2:** Use Cayley-Hamilton (characteristic polynomial of $M$)
+
+$\det(M - \lambda I) = (1-\lambda)^2 - 6 = \lambda^2 - 2\lambda - 5 = 0$
+
+By Cayley-Hamilton: $M^2 - 2M - 5I = 0$
+
+So $M^2 + xM - 5I = 0 \Rightarrow x = -2$.
+
+**Verify:** $M^2 - 2M - 5I = \begin{pmatrix}7&6\\4&7\end{pmatrix} - \begin{pmatrix}2&6\\4&2\end{pmatrix} - \begin{pmatrix}5&0\\0&5\end{pmatrix} = \begin{pmatrix}0&0\\0&0\end{pmatrix}$ ✓
+
+</TabItem>
+<TabItem value="pandas" label="🐼 pandas">
+
+```python
+import numpy as np
+import pandas as pd
+
+# Input file format (M.csv): 2x2 matrix, no header
+# 1,3
+# 2,1
+M = pd.read_csv("M.csv", header=None).to_numpy(dtype=float)
+
+# Matrix power
+M2 = M @ M          # or np.linalg.matrix_power(M, 2)
+I  = np.eye(2)
+
+# Test different x values
+for x in range(-5, 5):
+    result = M2 + x*M - 5*I
+    if np.allclose(result, 0):
+        print(f"x = {x} works!")
+        break
+
+# Verify via Cayley-Hamilton
+eigenvalues = np.linalg.eigvals(M)
+print("Eigenvalues:", eigenvalues)
+# Characteristic poly: λ² - tr(M)λ + det(M) = λ² - 2λ - 5
+print("Trace:", np.trace(M))   # = 2
+print("Det:  ", np.linalg.det(M))  # = 1-6 = -5
+```
+
+</TabItem>
+<TabItem value="excel" label="📊 Excel">
+
+```
+# Enter M in B2:C3
+B2=1  C2=3
+B3=2  C3=1
+
+# M^2 using MMULT in E2:F3
+E2: =MMULT(B2:C3, B2:C3)   [Ctrl+Shift+Enter as array formula]
+
+# Test M^2 + xM - 5I
+# Put x in H1, then in H2:I3:
+H2: =E2 + $H$1*B2 - 5*1    (diagonal)
+I2: =F2 + $H$1*C2 - 5*0    (off-diagonal)
+...
+# Try H1 = -2 → should give zeros
+```
+
+</TabItem>
+</Tabs>
+
+### 3.6 GATE-Style Solved Questions (Matrices)
+
+**Q1 (Dimensions).** If $A$ is $3\times 5$, $B$ is $5\times 2$, $C$ is $2\times 3$, find the order of $ABC$ and check whether $CAB$ is defined.
+
+**Solution:** $AB$ is $3\times 2$, so $ABC$ is $(3\times 2)(2\times 3)=3\times 3$. For $CAB$, $CA$ is $(2\times 3)(3\times 5)=2\times 5$, so $CAB$ is $(2\times 5)(5\times 2)=2\times 2$ (defined).
+
+**Q2 (Transpose rule).** Show $(AB)^T=B^T A^T$.
+
+**Solution:** $(AB)_{ij}=\sum_r a_{ir}b_{rj}$. Hence $(AB)^T_{ij}=(AB)_{ji}=\sum_r a_{jr}b_{ri}=(B^T A^T)_{ij}$.
+
+**Q3 (Inverse of product).** If $A,B$ are invertible, prove $(AB)^{-1}=B^{-1}A^{-1}$.
+
+**Solution:** $(AB)(B^{-1}A^{-1})=A(BB^{-1})A^{-1}=I$ and similarly $(B^{-1}A^{-1})(AB)=I$.
+
+**Q4 (Orthogonal matrix).** If $Q^TQ=I$, show $Q^{-1}=Q^T$ and $\det(Q)=\pm 1$.
+
+**Solution:** From $Q^TQ=I$, multiply by $Q^{-1}$ to get $Q^T=Q^{-1}$. Taking determinant: $\det(Q^TQ)=\det(I)\Rightarrow (\det Q)^2=1$.
+
+**Q5 (Idempotent).** If $A^2=A$ for a $3\times 3$ matrix, find possible values of $\det(A)$.
+
+**Solution:** Eigenvalues satisfy $\lambda^2=\lambda\Rightarrow\lambda\in\{0,1\}$. So $\det(A)=\prod \lambda_i\in\{0,1\}$.
+
+**Q6 (Nilpotent).** If $A^k=0$ for some $k\ge1$, show $\det(A)=0$.
+
+**Solution:** $0=\det(A^k)=(\det A)^k\Rightarrow\det(A)=0$.
+
+---
+
+## 4. Determinant
+
+### 4.1 What is a Determinant?
+
+The **determinant** is a scalar value associated with a square matrix. It represents the **scaling factor of the linear transformation** described by the matrix.
+
+$$\det(A) \text{ or } |A|$$
+
+**Geometric meaning:**
+- $|\det(A)| = $ factor by which volumes (areas in 2D) are scaled
+- $\det(A) > 0$: orientation preserved
+- $\det(A) < 0$: orientation flipped (reflection)
+- $\det(A) = 0$: transformation **squishes** space into lower dimension → matrix is **singular** (not invertible)
+
+<Admonition type="caution" title="Determinant Pitfalls (very common in GATE)">
+- $\det(A+B)$ is **not** equal to $\det(A)+\det(B)$ in general.
+- $\det(AB)=0$ implies **at least one** of $\det(A),\det(B)$ is 0 (not necessarily both).
+- Track row operations carefully: row swap flips sign; scaling a row scales the determinant.
+</Admonition>
+
+### 4.2 Calculating Determinants
+
+#### 2×2 Matrix
+
+$$\det\begin{pmatrix}a & b \\ c & d\end{pmatrix} = ad - bc$$
+
+#### 3×3 Matrix — Sarrus' Rule
+
+$$\det\begin{pmatrix}a&b&c\\d&e&f\\g&h&i\end{pmatrix} = aei + bfg + cdh - ceg - bdi - afh$$
+
+**Sarrus' Rule (visual):** Copy the first two columns to the right, multiply diagonals going right (+) and left (−).
+
+```
+a  b  c | a  b
+d  e  f | d  e
+g  h  i | g  h
+
+(+) a·e·i + b·f·g + c·d·h
+(-) c·e·g + b·d·i + a·f·h
+```
+
+#### Cofactor Expansion (any row/column)
+
+$$\det(A) = \sum_{j=1}^{n} a_{ij} \cdot C_{ij}$$
+
+where the **cofactor** $C_{ij} = (-1)^{i+j} M_{ij}$ and $M_{ij}$ is the **minor** (determinant of the submatrix after deleting row $i$, column $j$).
+
+**Sign pattern:**
+$$\begin{pmatrix}+&-&+\\-&+&-\\+&-&+\end{pmatrix}$$
+
+<Admonition type="tip" title="GATE Tip">
+Always expand along a row or column that has the **most zeros** — minimizes computation.
+</Admonition>
+
+### 4.3 Minor and Cofactor
+
+| Term | Definition |
+|---|---|
+| **Minor** $M_{ij}$ | Determinant of matrix after removing row $i$, column $j$ |
+| **Cofactor** $C_{ij}$ | $(-1)^{i+j} M_{ij}$ |
+| **Cofactor Matrix** | Matrix of all cofactors |
+| **Adjugate** (adj) | Transpose of cofactor matrix |
+
+### 4.4 Properties of Determinants
+
+| Property | Formula | Geometric Meaning |
+|---|---|---|
+| Transpose | $\det(A^T) = \det(A)$ | Same volume scaling |
+| Product | $\det(AB) = \det(A)\det(B)$ | Transformations compose |
+| Inverse | $\det(A^{-1}) = \frac{1}{\det(A)}$ | Inverse scales inversely |
+| Scalar | $\det(kA) = k^n \det(A)$ for $n \times n$ | Each row scaled by $k$ |
+| Power | $\det(A^n) = (\det A)^n$ | Applied $n$ times |
+| Similarity | $\det(P^{-1}AP) = \det(A)$ | Similar matrices same det |
+| $A^T A$ | $\det(A^T A) = (\det A)^2$ | Always non-negative |
+| Eigenvalues | $\det(A)=\prod_i \lambda_i$ | Product of eigenvalues |
+| Adjugate | $A\,\text{adj}(A)=\det(A)I$ | Avoids computing inverse |
+| det(adj) | $\det(\text{adj}(A)) = (\det A)^{n-1}$ | High-frequency identity |
+| Row swap | Changes sign of det | Orientation flip |
+| Row add multiple | No change | Shear doesn't change volume |
+| Row scale by $k$ | Det multiplied by $k$ | — |
+| Two equal rows | $\det = 0$ | Linearly dependent |
+| Zero row | $\det = 0$ | Collapsed dimension |
+
+### 4.4.1 Fast Evaluation (Row/Column Operations)
+
+**GATE-safe workflow:** reduce to a triangular matrix using determinant-preserving operations.
+
+<Admonition type="note" title="Row/Column Operation Effects (memorize)">
+- $R_i \leftrightarrow R_j$ (swap): $\det$ multiplies by $-1$.
+- $R_i \leftarrow kR_i$ (scale): $\det$ multiplies by $k$.
+- $R_i \leftarrow R_i + kR_j$ (add multiple): $\det$ unchanged.
+
+Same rules apply for **column operations**.
+</Admonition>
+
+**Shortcut:** If you can make $A$ upper triangular using only operations of the form $R_i \leftarrow R_i + kR_j$ (no swaps/scales), then
+$$\det(A)=\prod_i a_{ii}.$$
+
+### 4.5 Special Cases
+
+| Matrix Type | Determinant |
+|---|---|
+| UTM or LTM | Product of diagonal elements $\prod a_{ii}$ |
+| Diagonal | $\prod d_{ii}$ |
+| Identity | $1$ |
+| Orthogonal ($Q^TQ=I$) | $\pm 1$ |
+| Singular | $0$ |
+
+### 4.6 Invertibility
+
+A matrix $A$ is **invertible** (non-singular) if and only if:
+- $\det(A) \neq 0$
+- Rows (or columns) are linearly independent
+- $\text{rank}(A) = n$
+- The system $Ax = 0$ has only the trivial solution
+
+### 4.7 Matrix Inverse
+
+$$A^{-1} = \frac{1}{\det(A)} \text{adj}(A)$$
+
+where $\text{adj}(A) = (C_{ij})^T$ (transpose of cofactor matrix).
+
+**Verify:** $AA^{-1} = A^{-1}A = I$
+
+### 4.8 Geometric Applications
+
+- **Area** of parallelogram formed by $\vec{u}, \vec{v}$: $\left|\det\begin{pmatrix}u_1&v_1\\u_2&v_2\end{pmatrix}\right|$
+- **Volume** of parallelepiped formed by $\vec{u}, \vec{v}, \vec{w}$: $|\det[\vec{u}\ \vec{v}\ \vec{w}]|$
+
+### 4.9 Practice — Determinants
+
+<Tabs>
+<TabItem value="paper" label="✍️ Pen & Paper">
+
+**Problem 1:** Compute using Sarrus' rule:
+$$\det\begin{pmatrix}2&1&3\\0&4&-1\\1&2&5\end{pmatrix}$$
+
+**Solution:**
+$(+)$: $2 \cdot 4 \cdot 5 + 1 \cdot (-1) \cdot 1 + 3 \cdot 0 \cdot 2 = 40 - 1 + 0 = 39$
+
+$(-)$: $3 \cdot 4 \cdot 1 + 1 \cdot 0 \cdot 5 + 2 \cdot (-1) \cdot 2 = 12 + 0 - 4 = 8$
+
+$\det = 39 - 8 = \boxed{31}$
+
+**Problem 2:** Find $\det(A^3)$ if $\det(A) = 4$.
+
+$\det(A^3) = (\det A)^3 = 64$
+
+</TabItem>
+<TabItem value="pandas" label="🐼 pandas">
+
+```python
+import numpy as np
+import pandas as pd
+
+# Input file format (A.csv): square matrix, no header
+# 2,1,3
+# 0,4,-1
+# 1,2,5
+A = pd.read_csv("A.csv", header=None).to_numpy(dtype=float)
+
+if A.shape[0] != A.shape[1]:
+    raise ValueError(f"A must be square; got {A.shape}")
+
+det_A = np.linalg.det(A)
+print(f"det(A)    = {det_A:.6g}")
+print(f"det(A^T)  = {np.linalg.det(A.T):.6g}")  # same
+
+# Inverse
+A_inv = np.linalg.inv(A)
+print("A_inv:\n", A_inv.round(4))
+
+# Verify
+print("A @ A_inv ≈ I:", np.allclose(A @ A_inv, np.eye(A.shape[0])))
+
+# Powers of det
+print(f"det(A^3) = {det_A**3:.6g}")
+```
+
+</TabItem>
+<TabItem value="excel" label="📊 Excel">
+
+```
+# Enter A in B2:D4, then:
+
+det(A):    =MDETERM(B2:D4)
+det(A^T):  =MDETERM(TRANSPOSE(B2:D4))
+Inverse:   =MINVERSE(B2:D4)   [array formula, Ctrl+Shift+Enter]
+
+# Verify A * A_inv = I
+=MMULT(B2:D4, MINVERSE(B2:D4))
+```
+
+</TabItem>
+<TabItem value="awk" label="🦅 AWK">
+
+```bash
+# 2x2 determinant from CSV (matrix2x2.csv), no header
+# a,b
+# c,d
+awk -F',' 'NR==1{a=$1;b=$2} NR==2{c=$1;d=$2; print "det =", a*d - b*c}' matrix2x2.csv
+
+# 3x3 determinant from CSV (matrix3x3.csv), no header
+# a,b,c
+# d,e,f
+# g,h,i
+awk -F',' '\
+NR==1{a=$1;b=$2;c=$3} \
+NR==2{d=$1;e=$2;f=$3} \
+NR==3{g=$1;h=$2;i=$3} \
+END{det = a*e*i + b*f*g + c*d*h - c*e*g - b*d*i - a*f*h; print "det =", det}\
+' matrix3x3.csv
+```
+
+</TabItem>
+</Tabs>
+
+### 4.10 GATE-Style Solved Questions (Determinants)
+
+**Q1 (Linear dependence).** Evaluate $\det\begin{pmatrix}1&2&3\\2&4&6\\1&1&1\end{pmatrix}$.
+
+**Solution:** Row 2 $=2\times$ Row 1 $\Rightarrow \det=0$.
+
+**Q2 (Row operations).** Compute $\det\begin{pmatrix}1&1&1\\1&2&3\\1&3&6\end{pmatrix}$.
+
+**Solution:** Use $R_2\leftarrow R_2-R_1$, $R_3\leftarrow R_3-R_1$:
+$$\det\begin{pmatrix}1&1&1\\0&1&2\\0&2&5\end{pmatrix}=1\cdot\det\begin{pmatrix}1&2\\2&5\end{pmatrix}=1\cdot(5-4)=1.$$
+
+**Q3 (Standard symmetric form).** Find all $k$ such that
+$$\det\begin{pmatrix}k&1&1\\1&k&1\\1&1&k\end{pmatrix}=0.$$
+
+**Solution:** This matrix has eigenvalues $k-1$ (multiplicity 2) and $k+2$ (multiplicity 1). Hence
+$$\det=(k-1)^2(k+2)=0 \Rightarrow k\in\{1,-2\}.$$
+
+**Q4 (Adjugate identity).** If $A$ is $4\times 4$ and $\det(A)=3$, find $\det(\text{adj}(A))$.
+
+**Solution:** $\det(\text{adj}(A))=(\det A)^{n-1}=3^3=27$.
+
+**Q5 (Scaling + transpose).** If $A$ is $3\times 3$ and $\det(A)=2$, find $\det(2A^T)$.
+
+**Solution:** $\det(2A^T)=2^3\det(A^T)=8\cdot 2=16$.
+
+**Q6 ($A^T A$).** If $\det(A)=-5$ for a square matrix $A$, compute $\det(A^T A)$.
+
+**Solution:** $\det(A^T A)=(\det A)^2=25$.
+
+**Q7 (Block triangular).** If $M=\begin{pmatrix}B&*\\0&C\end{pmatrix}$ where $B,C$ are square, show $\det(M)=\det(B)\det(C)$.
+
+**Solution:** Block upper-triangular determinant equals product of diagonal block determinants.
+
+**Q8 (Cramer’s condition).** For $Ax=b$, when is the solution unique in terms of $\det(A)$?
+
+**Solution:** Unique solution iff $\det(A)\ne 0$.
+
+---
+
+## 5. Systems of Linear Equations
+
+### 5.1 Geometric Interpretation
+
+A system of linear equations represents **intersections of hyperplanes**. For 2 equations in 2 unknowns, each equation is a line. The solution is where they meet.
+
+#### Possible Outcomes
+
+| Case | Geometric Picture | Algebraic Condition |
+|---|---|---|
+| **Unique solution** | Lines intersect at one point | $\det(A) \neq 0$ |
+| **Infinite solutions** | Lines coincide | Consistent + dependent rows |
+| **No solution** | Parallel lines (never meet) | Inconsistent system |
+
+### 5.2 Cases with Visualization
+
+Below are the four canonical cases. **Visualize each using matplotlib/plotly.**
+
+---
+
+#### Case 1 — Unique Solution (2D)
+
+$$x + y = 5, \quad x - y = 1$$
+
+Two lines crossing at one point.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-1, 7, 300)
+y1 = 5 - x
+y2 = x - 1
+
+plt.figure(figsize=(6,5))
+plt.plot(x, y1, label='x + y = 5')
+plt.plot(x, y2, label='x - y = 1')
+plt.axhline(0, color='k', lw=0.5); plt.axvline(0, color='k', lw=0.5)
+plt.xlim(-1,7); plt.ylim(-2,7)
+
+sol = np.linalg.solve([[1,1],[1,-1]], [5,1])
+plt.plot(*sol, 'ro', markersize=10, label=f'Solution ({sol[0]:.0f}, {sol[1]:.0f})')
+plt.legend(); plt.grid(alpha=0.3)
+plt.title("Unique Solution"); plt.show()
+```
+
+---
+
+#### Case 2 — Unique Solution (3D)
+
+$$x + y + z = 8, \quad x + y - z = 2, \quad x - y + z = 4$$
+
+Three planes intersecting at a single point.
+
+```python
+import plotly.graph_objects as go
+import numpy as np
+
+# Solve
+A = np.array([[1,1,1],[1,1,-1],[1,-1,1]])
+b = np.array([8, 2, 4])
+sol = np.linalg.solve(A, b)
+print("Solution:", sol)  # (3, 2, 3)
+
+# Plot each plane
+xx, yy = np.meshgrid(np.linspace(0,6,20), np.linspace(0,6,20))
+planes = [
+    (8 - xx - yy, 'x+y+z=8'),
+    (2 - xx - yy, 'x+y-z=2 → z=x+y-2, careful!'),
+    (4 - xx + yy, 'x-y+z=4'),
+]
+fig = go.Figure()
+for zz, name in planes:
+    fig.add_trace(go.Surface(x=xx, y=yy, z=zz, name=name, opacity=0.5, showscale=False))
+fig.add_trace(go.Scatter3d(x=[sol[0]], y=[sol[1]], z=[sol[2]], mode='markers',
+                            marker=dict(size=8, color='red'), name='Solution'))
+fig.update_layout(title="Three Planes — Unique Intersection")
+fig.show()
+```
+
+---
+
+#### Case 3 — No Solution (Inconsistent)
+
+$$x + y + z = 0, \quad x + y + z = 3, \quad x + y - z = 1$$
+
+The first two equations are parallel planes — they **never intersect**.
+
+$$\det(A) = 0, \quad \text{but } \text{rank}([A|b]) > \text{rank}(A)$$
+
+```python
+A = np.array([[1,1,1],[1,1,1],[1,1,-1]])
+b = np.array([0, 3, 1])
+print("det(A) =", np.linalg.det(A))  # 0
+
+# Check rank
+from numpy.linalg import matrix_rank
+print("rank(A)   =", matrix_rank(A))     # < 3
+print("rank(A|b) =", matrix_rank(np.column_stack([A,b])))  # rank increases → no solution
+```
+
+---
+
+#### Case 4 — No Solution (Three Parallel Planes)
+
+$$z = 5, \quad z = 3, \quad x = 4$$
+
+The first two are parallel ($z=5$ and $z=3$ never meet).
+
+---
+
+#### Case 5 — Infinite Solutions
+
+$$x + y = 5, \quad x + y - z = 2, \quad x + y = 5 \quad \text{(redundant)}$$
+
+```python
+A = np.array([[1,1,0],[1,1,-1],[1,1,0]])
+b = np.array([5, 2, 5])
+print("rank(A)   =", matrix_rank(A))          # 2
+print("rank(A|b) =", matrix_rank(np.column_stack([A,b])))  # also 2 → infinite solutions
+```
+
+The solution is a **line** in 3D space.
+
+### 5.3 Methods to Solve
+
+| Method | When to use |
+|---|---|
+| **Cramer's Rule** | Small systems (2×2, 3×3), theoretical analysis |
+| **Gaussian Elimination** | General method, step-by-step |
+| **Gauss-Jordan** | Find inverse + solve simultaneously |
+| **numpy.linalg.solve** | Numerical computation |
+
+#### Cramer's Rule
+
+For $Ax = b$:
+
+$$x_i = \frac{\det(A_i)}{\det(A)}$$
+
+where $A_i$ is $A$ with the $i$-th column replaced by $b$.
+
+**Only works when $\det(A) \neq 0$.**
+
+<Tabs>
+<TabItem value="paper" label="✍️ Pen & Paper">
+
+**Solve:**
+$$x + y = 5, \quad x - y = 1$$
+
+$$A = \begin{pmatrix}1&1\\1&-1\end{pmatrix}, \quad b = \begin{pmatrix}5\\1\end{pmatrix}$$
+
+$\det(A) = -1-1 = -2$
+
+$x = \frac{\det\begin{pmatrix}5&1\\1&-1\end{pmatrix}}{-2} = \frac{-5-1}{-2} = 3$
+
+$y = \frac{\det\begin{pmatrix}1&5\\1&1\end{pmatrix}}{-2} = \frac{1-5}{-2} = 2$
+
+**Solution: $(x, y) = (3, 2)$** ✓ Check: $3+2=5$ ✓, $3-2=1$ ✓
+
+</TabItem>
+<TabItem value="pandas" label="🐼 pandas">
+
+```python
+import numpy as np
+import pandas as pd
+
+# Input file format (system.csv): augmented matrix [A|b], no header
+# 1,1,5
+# 1,-1,1
+aug = pd.read_csv("system.csv", header=None).to_numpy(dtype=float)
+A = aug[:, :-1]
+b = aug[:, -1]
+
+# Method 1: numpy.linalg.solve
+x = np.linalg.solve(A, b)
+print("Solution:", x)  # [3. 2.]
+
+# Method 2: Cramer's Rule
+det_A = np.linalg.det(A)
+for i in range(len(b)):
+    Ai = A.copy()
+    Ai[:, i] = b
+    print(f"x_{i+1} = {np.linalg.det(Ai)/det_A:.2f}")
+
+# Method 3: Inverse
+x_inv = np.linalg.inv(A) @ b
+print("Via inverse:", x_inv)
+```
+
+</TabItem>
+<TabItem value="excel" label="📊 Excel">
+
+```
+# Matrix A in B2:C3, b in E2:E3
+B2=1  C2=1  E2=5
+B3=1  C3=-1 E3=1
+
+# Solve using MMULT + MINVERSE (array formula)
+=MMULT(MINVERSE(B2:C3), E2:E3)
+
+# Determinant
+=MDETERM(B2:C3)
+```
+
+</TabItem>
+</Tabs>
+
+---
+
+## 6. Quick Reference — GATE Formulas
+
+<Admonition type="note" title="GATE Cheat Sheet">
+
+**Determinant (must memorize):**
+$$\det(A^T)=\det(A),\quad \det(AB)=\det(A)\det(B),\quad \det(A^{-1})=\frac{1}{\det(A)}$$
+$$\det(kA)=k^n\det(A)\ (n\times n),\quad \det(A^T A)=(\det A)^2\ge 0$$
+$$A\,\text{adj}(A)=\det(A)I,\quad \det(\text{adj}(A))=(\det A)^{n-1}$$
+
+**Row/column operations (effects on $\det$):**
+- swap two rows/cols $\Rightarrow$ multiply by $-1$
+- multiply a row/col by $k$ $\Rightarrow$ multiply by $k$
+- add multiple of one row/col to another $\Rightarrow$ unchanged
+
+**Matrix identities (high frequency):**
+$$(AB)^T=B^T A^T,\quad (AB)^{-1}=B^{-1}A^{-1},\quad (A^T)^{-1}=(A^{-1})^T$$
+
+**Systems:** unique solution for $Ax=b$ (square $A$) iff $\det(A)\ne 0$.
+
+</Admonition>
+
+---
+
+## 7. ML Connections Summary
+
+| Concept | Machine Learning Application |
+|---|---|
+| Dot product | Similarity, weighted sums in neural networks |
+| Matrix multiplication | Forward pass in neural networks ($XW$) |
+| Determinant = 0 | Singular covariance → degenerate distribution |
+| Inverse | Solving normal equations in linear regression: $\hat{\beta} = (X^TX)^{-1}X^Ty$ |
+| Symmetric matrix | Covariance matrix, kernel matrix, Hessian |
+| LTM/UTM | Cholesky decomposition for sampling from multivariate Gaussians |
+| System of equations | Least squares, finding model parameters |
+
+---
+
+## 8. Week 1 Problem Set
+
+### A) Matrices & Operations (GATE-level)
+
+1. If $A$ is $3\times 4$ and $B$ is $4\times 2$, find the order of $AB$ and check whether $BA$ is defined.
+
+**Solution:** $AB$ is $3\times 2$; $BA$ is not defined.
+
+2. If $A$ is invertible and $AX=B$, solve for $X$.
+
+**Solution:** $X=A^{-1}B$.
+
+3. True/False (justify): $AB=AC \Rightarrow B=C$.
+
+**Solution:** False in general; true if $A$ is invertible.
+
+4. If $Q$ is orthogonal ($Q^TQ=I$), compute $Q^{-1}$ and $\det(Q)$.
+
+**Solution:** $Q^{-1}=Q^T$ and $\det(Q)=\pm 1$.
+
+5. If $A^2=A$ (idempotent), list possible values of $\det(A)$.
+
+**Solution:** $0$ or $1$.
+
+### B) Determinants (GATE-level)
+
+6. If $A$ is $3\times 3$ and $\det(A)=3$, find $\det(2A)$.
+
+**Solution:** $\det(2A)=2^3\det(A)=24$.
+
+7. Compute $\det\begin{pmatrix}1&2&3\\4&5&6\\7&8&9\end{pmatrix}$.
+
+**Solution:** $0$.
+
+8. Find all $k$ such that $\det\begin{pmatrix}k&1&1\\1&k&1\\1&1&k\end{pmatrix}=0$.
+
+**Solution:** $k\in\{1,-2\}$.
+
+9. If $\det(A)=-4$, compute $\det(A^T A)$.
+
+**Solution:** $(\det A)^2=16$.
+
+10. If $A$ is $4\times 4$ and $\det(A)=2$, compute $\det(\text{adj}(A))$.
+
+**Solution:** $(\det A)^{3}=8$.
+
+### C) CSV-Based Coding (pandas / AWK)
+
+11. Create `A.csv` (square matrix) and compute $\det(A)$ using the pandas snippet in **4.9**.
+
+12. Create `matrix3x3.csv` and compute det using the AWK snippet in **4.9**.
+
+---
+
+*Week 1 complete. Next up: **Rank, Null Space, Linear Independence, and Span** → Week 2.*
