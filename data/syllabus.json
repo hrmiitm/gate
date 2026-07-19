@@ -1,0 +1,51 @@
+{
+  "exam": {
+    "name": "GATE DA 2027",
+    "targetDate": "2027-02-01",
+    "targetDateConfirmed": false,
+    "durationMinutes": 180,
+    "questions": 65,
+    "marks": 100
+  },
+  "subjects": [
+    {
+      "id": "probability-statistics",
+      "short": "P&S",
+      "title": "Probability & Statistics",
+      "status": "live",
+      "estimate": "Often the highest-weighted DA section",
+      "modules": [
+        "Counting & probability foundations",
+        "Conditional probability, joint distributions & Bayes",
+        "Random variables & discrete distributions",
+        "Continuous distributions & CDFs",
+        "Descriptive statistics & moments",
+        "Central Limit Theorem & sampling distributions",
+        "Statistical inference"
+      ]
+    },
+    {
+      "id": "linear-algebra",
+      "short": "LA",
+      "title": "Linear Algebra",
+      "status": "live",
+      "estimate": "Community estimate: roughly 8–12 marks",
+      "modules": [
+        "Vector spaces, basis & dimension",
+        "Matrices & special matrices",
+        "Linear systems, elimination, rank & nullity",
+        "Determinants",
+        "Eigenvalues, eigenvectors & diagonalization",
+        "Quadratic forms",
+        "LU decomposition & SVD"
+      ]
+    },
+    { "id": "calculus-optimization", "short": "C&O", "title": "Calculus & Optimization", "status": "locked", "modules": [] },
+    { "id": "programming-dsa", "short": "PDSA", "title": "Programming, Data Structures & Algorithms", "status": "locked", "modules": [] },
+    { "id": "dbms-warehousing", "short": "DBMS", "title": "Database Management & Warehousing", "status": "locked", "modules": [] },
+    { "id": "machine-learning", "short": "ML", "title": "Machine Learning", "status": "locked", "modules": [] },
+    { "id": "artificial-intelligence", "short": "AI", "title": "Artificial Intelligence", "status": "locked", "modules": [] },
+    { "id": "general-aptitude", "short": "GA", "title": "General Aptitude", "status": "locked", "modules": [] }
+  ]
+}
+

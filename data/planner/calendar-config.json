@@ -1,0 +1,21 @@
+{
+  "startDate": "2026-07-19",
+  "targetExamDate": "2027-02-01",
+  "targetConfirmed": false,
+  "weeklyRhythm": { "focusDays": 5, "practiceDays": 1, "revisionDays": 1 },
+  "phaseOrder": ["probability-statistics", "linear-algebra"],
+  "modulePacing": {
+    "probability-statistics": [3, 4, 3, 3, 3, 3, 4],
+    "linear-algebra": [3, 3, 3, 2, 4, 3, 4]
+  },
+  "lockedBlocks": [
+    { "subject": "calculus-optimization", "weeks": 3 },
+    { "subject": "programming-dsa", "weeks": 4 },
+    { "subject": "dbms-warehousing", "weeks": 2 },
+    { "subject": "machine-learning", "weeks": 3 },
+    { "subject": "artificial-intelligence", "weeks": 2 },
+    { "subject": "general-aptitude", "weeks": 1 },
+    { "subject": "final-revision", "weeks": 2 }
+  ]
+}
+
