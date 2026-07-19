@@ -111,6 +111,7 @@ export function renderMath(root = document.body) {
       { left: '$$', right: '$$', display: true },
       { left: '\\[', right: '\\]', display: true },
       { left: '\\(', right: '\\)', display: false },
+      { left: '$', right: '$', display: false },
     ],
     throwOnError: false,
   });
@@ -126,4 +127,3 @@ export function toast(message) {
 
 initShell();
 window.addEventListener('load', () => renderMath());
-

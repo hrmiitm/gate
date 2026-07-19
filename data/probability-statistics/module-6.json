@@ -12,8 +12,8 @@
   ],
   "introduction": "The Central Limit Theorem describes the shape of a properly standardized sum or mean as sample size grows. It does not say the raw data become normal, and it does not erase assumptions.",
   "theory": [
-    "For iid observations with finite variance, the sample mean has mean $mu$ and variance $sigma^2/n$. Its standardized form approaches $N(0,1)$.",
-    "The law of large numbers is about convergence of the sample mean to $mu$; the CLT describes the scale and approximate distribution of its fluctuations."
+    "For iid observations with finite variance, the sample mean has mean $\\mu$ and variance $\\sigma^2/n$. Its standardized form approaches $N(0,1)$.",
+    "The law of large numbers is about convergence of the sample mean to $\\mu$; the CLT describes the scale and approximate distribution of its fluctuations."
   ],
   "formulas": [
     "E[\\bar X]=\\mu,\\qquad Var(\\bar X)=\\frac{\\sigma^2}{n}",
@@ -45,7 +45,7 @@
   ],
   "pitfalls": [
     "Saying the observations themselves become normal.",
-    "Using $sigma/n$ instead of $sigma/sqrt n$ for standard error.",
+    "Using $\\sigma/n$ instead of $\\sigma/\\sqrt n$ for standard error.",
     "Forgetting variance of a sum grows with $n$.",
     "Applying the usual CLT when variance is infinite or dependence is uncontrolled."
   ],

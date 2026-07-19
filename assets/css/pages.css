@@ -20,8 +20,8 @@
 .module-row p { margin: 0; color: var(--muted); font-size: .82rem; }
 .module-progress { min-width: 120px; }
 .module-progress small { color: var(--muted); }
-.module-shell { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 3rem; align-items: start; }
-.module-content { max-width: 830px; }
+.module-shell { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 3rem; align-items: start; min-width: 0; }
+.module-content { max-width: 830px; min-width: 0; }
 .module-nav { position: sticky; top: 100px; padding-left: 1.2rem; border-left: 1px solid var(--line); }
 .module-nav a { display: block; padding: .35rem 0; color: var(--muted); text-decoration: none; }
 .module-nav a:hover { color: var(--accent); }
@@ -100,12 +100,13 @@ code { padding: .1rem .3rem; border-radius: 4px; background: var(--surface-2); f
   .heatmap { grid-template-columns: repeat(4, 1fr); }
   .filters { grid-template-columns: repeat(3, 1fr); }
   .filters input { grid-column: span 2; }
-  .module-shell, .runner-layout { grid-template-columns: 1fr; }
+  .module-shell, .runner-layout { grid-template-columns: minmax(0, 1fr); }
   .module-nav, .question-palette { position: static; order: -1; border-left: 0; padding: 0; }
   .module-nav { display: flex; gap: 1rem; overflow-x: auto; }
 }
 
 @media (max-width: 700px) {
+  .module-content h1 { font-size: 2.35rem; overflow-wrap: anywhere; }
   .hero-split, .today-card, .planner-hero, .about-grid { grid-template-columns: 1fr; }
   .countdown { border-left: 0; padding: 1.5rem 0 0; border-top: 1px solid var(--line); }
   .module-row { grid-template-columns: 42px minmax(0, 1fr) auto; }

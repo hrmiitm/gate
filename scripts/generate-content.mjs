@@ -243,6 +243,10 @@ function repairMath(text) {
 }
 
 modules.forEach((module) => {
+  module.introduction = repairMath(module.introduction);
+  module.theory = module.theory.map(repairMath);
+  module.pitfalls = module.pitfalls.map(repairMath);
+  module.whyGate = repairMath(module.whyGate);
   module.examples = module.examples.map(([title, problem, solution]) => ({
     title: repairMath(title),
     problem: repairMath(problem),

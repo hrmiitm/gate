@@ -40,7 +40,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.65 var(--sans); }
+body { margin: 0; overflow-x: hidden; background: var(--bg); color: var(--ink); font: 15px/1.65 var(--sans); }
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 button, input, select, textarea { font: inherit; }
 button, .button { cursor: pointer; }
@@ -132,4 +132,3 @@ h3 { font-size: 1rem; line-height: 1.4; }
   body { background: white; color: black; font-size: 11pt; }
   .card { break-inside: avoid; }
 }
-

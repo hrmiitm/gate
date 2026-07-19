@@ -45,7 +45,7 @@
     }
   ],
   "pitfalls": [
-    "Using $det(A+B)=det A+det B$—this is false.",
+    "Using $\\operatorname{det}(A+B)=\\operatorname{det} A+\\operatorname{det} B$—this is false.",
     "Scaling the determinant only once when the whole matrix is scaled.",
     "Forgetting the sign change after a row swap.",
     "Computing a large expansion when triangularization is faster."

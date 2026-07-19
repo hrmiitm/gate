@@ -45,7 +45,7 @@
     }
   ],
   "pitfalls": [
-    "Swapping $P(Amid B)$ and $P(Bmid A)$.",
+    "Swapping $P(A\\mid B)$ and $P(B\\mid A)$.",
     "Dropping the prior/base rate in Bayes’ theorem.",
     "Marginalizing over the wrong support.",
     "Checking only one cell before claiming two variables are independent."

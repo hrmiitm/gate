@@ -14,7 +14,7 @@
   "introduction": "Gaussian elimination is not just a solving algorithm. Its pivots expose rank, free variables, consistency, and the entire geometry of a linear system in one pass.",
   "theory": [
     "Elementary row operations preserve the solution set. In echelon form, pivots identify basic variables and non-pivot columns correspond to free variables.",
-    "A system $Ax=b$ is consistent exactly when $b$ lies in the column space of $A$, equivalently when $rank(A)=rank([Amid b])$."
+    "A system $Ax=b$ is consistent exactly when $b$ lies in the column space of $A$, equivalently when $\\operatorname{rank}(A)=\\operatorname{rank}([A\\mid b])$."
   ],
   "formulas": [
     "\\operatorname{rank}(A)+\\operatorname{nullity}(A)=n",

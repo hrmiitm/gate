@@ -12,7 +12,7 @@
   ],
   "introduction": "An eigenvector is a direction a transformation does not rotate away from itself; its eigenvalue is the scaling along that direction. This viewpoint is faster and safer than treating the topic as determinant algebra alone.",
   "theory": [
-    "Eigenvalues solve $Av=lambda v$ with $v\ne0$. Trace and determinant give quick consistency checks through the sum and product of eigenvalues.",
+    "Eigenvalues solve $Av=\\lambda v$ with $v\\ne0$. Trace and determinant give quick consistency checks through the sum and product of eigenvalues.",
     "A matrix is diagonalizable when it has enough independent eigenvectors. Every real symmetric matrix has an orthonormal eigenbasis and real eigenvalues."
   ],
   "formulas": [
