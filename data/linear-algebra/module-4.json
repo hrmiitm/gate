@@ -1,0 +1,54 @@
+{
+  "subject": "linear-algebra",
+  "subjectTitle": "Linear Algebra",
+  "module": 4,
+  "title": "Determinants",
+  "searchTerms": [
+    "determinant",
+    "invertible",
+    "cofactor",
+    "volume",
+    "permutation"
+  ],
+  "introduction": "The determinant is a signed volume-scaling factor. In exam problems, its transformation rules are usually more valuable than a long cofactor expansion.",
+  "theory": [
+    "A zero determinant means the columns collapse volume and are dependent. Nonzero determinant is equivalent to invertibility for a square matrix.",
+    "Track row operations carefully: swaps flip sign, scaling a row scales the determinant, and adding a multiple of one row to another leaves it unchanged."
+  ],
+  "formulas": [
+    "\\det(AB)=\\det(A)\\det(B)",
+    "\\det(A^T)=\\det(A)",
+    "\\det(A^{-1})=\\frac1{\\det(A)}",
+    "\\det(cA)=c^n\\det(A)\\quad(A\\in\\mathbb R^{n\\times n})",
+    "\\det(A-\\lambda I)=0\\quad\\text{characteristic equation}"
+  ],
+  "examples": [
+    {
+      "title": "Triangular shortcut",
+      "problem": "$A$ is triangular with diagonal $2,-1,4$.",
+      "solution": "$\\operatorname{det} A=2(-1)4=-8$."
+    },
+    {
+      "title": "Row swap",
+      "problem": "$B$ swaps two rows of $A$ and $\\operatorname{det} A=5$.",
+      "solution": "$\\operatorname{det} B=-5$."
+    },
+    {
+      "title": "Product",
+      "problem": "$\\operatorname{det} A=2,\\operatorname{det} B=-3$.",
+      "solution": "$\\operatorname{det}(A^2B)=2^2(-3)=-12$."
+    },
+    {
+      "title": "Scalar matrix",
+      "problem": "$A$ is $3\\times3$ with $\\operatorname{det} A=4$.",
+      "solution": "$\\operatorname{det}(2A)=2^3\\operatorname{det} A=32$."
+    }
+  ],
+  "pitfalls": [
+    "Using $det(A+B)=det A+det B$—this is false.",
+    "Scaling the determinant only once when the whole matrix is scaled.",
+    "Forgetting the sign change after a row swap.",
+    "Computing a large expansion when triangularization is faster."
+  ],
+  "whyGate": "Determinants connect invertibility, eigenvalues, change of variables, Gaussian models, and volume distortion."
+}

@@ -1,0 +1,54 @@
+{
+  "subject": "linear-algebra",
+  "subjectTitle": "Linear Algebra",
+  "module": 5,
+  "title": "Eigenvalues, eigenvectors & diagonalization",
+  "searchTerms": [
+    "eigenvalue",
+    "eigenvector",
+    "diagonalization",
+    "trace",
+    "spectral"
+  ],
+  "introduction": "An eigenvector is a direction a transformation does not rotate away from itself; its eigenvalue is the scaling along that direction. This viewpoint is faster and safer than treating the topic as determinant algebra alone.",
+  "theory": [
+    "Eigenvalues solve $Av=lambda v$ with $v\ne0$. Trace and determinant give quick consistency checks through the sum and product of eigenvalues.",
+    "A matrix is diagonalizable when it has enough independent eigenvectors. Every real symmetric matrix has an orthonormal eigenbasis and real eigenvalues."
+  ],
+  "formulas": [
+    "\\det(A-\\lambda I)=0",
+    "\\operatorname{tr}(A)=\\sum_i\\lambda_i",
+    "\\det(A)=\\prod_i\\lambda_i",
+    "A=PDP^{-1}\\Rightarrow A^k=PD^kP^{-1}",
+    "A=A^T\\Rightarrow A=Q\\Lambda Q^T"
+  ],
+  "examples": [
+    {
+      "title": "Triangular spectrum",
+      "problem": "A triangular matrix has diagonal $1,3,3$.",
+      "solution": "Its eigenvalues are $1,3,3$ with algebraic multiplicity counted."
+    },
+    {
+      "title": "Power quickly",
+      "problem": "$A=P\\operatorname{diag}(2,1)P^{-1}$.",
+      "solution": "$A^{10}=P\\operatorname{diag}(2^{10},1)P^{-1}$."
+    },
+    {
+      "title": "Repeated eigenvalue",
+      "problem": "$A=\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}$.",
+      "solution": "The eigenspace for 1 is one-dimensional, so this $2\\times2$ matrix is not diagonalizable."
+    },
+    {
+      "title": "Symmetric orthogonality",
+      "problem": "$A=A^T$ has distinct eigenvalues.",
+      "solution": "Corresponding eigenvectors are orthogonal; after normalization they form part of an orthonormal basis."
+    }
+  ],
+  "pitfalls": [
+    "Allowing the zero vector as an eigenvector.",
+    "Equating algebraic and geometric multiplicity automatically.",
+    "Assuming every matrix has real eigenvalues.",
+    "Confusing eigenvalues with singular values, which are always nonnegative."
+  ],
+  "whyGate": "This is the spectral engine behind PCA, covariance analysis, graph methods, dynamical systems, and optimization curvature."
+}

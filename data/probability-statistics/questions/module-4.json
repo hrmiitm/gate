@@ -1,0 +1,414 @@
+[
+  {
+    "id": "ps-04-001",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For a continuous random variable X, which statement is always true?",
+    "options": [
+      "P(X=x)=f(x)",
+      "P(X=x)=0",
+      "f(x)≤1",
+      "F(x)<1 for every x"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A single point has zero area under a continuous density, so P(X=x)=0.",
+    "common_mistake": "A density height can exceed one; probability is an integral."
+  },
+  {
+    "id": "ps-04-002",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If X is Uniform(a,b), its density on (a,b) is",
+    "options": [
+      "1/(a+b)",
+      "1/(b−a)",
+      "b−a",
+      "x/(b−a)"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A constant density over length b−a must have height 1/(b−a).",
+    "common_mistake": "Normalize by interval length, not endpoint sum."
+  },
+  {
+    "id": "ps-04-003",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The derivative of an absolutely continuous CDF F is",
+    "options": [
+      "the PMF",
+      "the density f almost everywhere",
+      "the survival function",
+      "the mean"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The density satisfies f(x)=F′(x) wherever the derivative exists.",
+    "common_mistake": "The CDF is accumulated probability, not density."
+  },
+  {
+    "id": "ps-04-004",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which continuous distribution is memoryless?",
+    "options": [
+      "Normal",
+      "Uniform",
+      "Exponential",
+      "Student t"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The exponential survival function satisfies P(X>s+t | X>s)=P(X>t).",
+    "common_mistake": "Geometric is the discrete memoryless analogue."
+  },
+  {
+    "id": "ps-04-005",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If X follows N(μ,σ²), then (X−μ)/σ follows",
+    "options": [
+      "N(0,1)",
+      "N(0,σ)",
+      "t with 1 df",
+      "chi-square with 1 df"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Centering by μ and scaling by the standard deviation produces a standard normal.",
+    "common_mistake": "Divide by σ, not variance σ²."
+  },
+  {
+    "id": "ps-04-006",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The support of a chi-square random variable is",
+    "options": [
+      "all real numbers",
+      "[0,∞)",
+      "(0,1)",
+      "integers only"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A chi-square variable is a sum of squared standard normals, hence nonnegative.",
+    "common_mistake": "It is continuous despite integer degrees of freedom."
+  },
+  {
+    "id": "ps-04-007",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which are properties of every CDF?",
+    "options": [
+      "Nondecreasing",
+      "Right-continuous",
+      "Limits 0 and 1 at negative and positive infinity",
+      "Differentiable everywhere"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Every CDF has the first three properties. Jumps are allowed, so differentiability is not required.",
+    "common_mistake": "Discrete CDFs have jumps."
+  },
+  {
+    "id": "ps-04-008",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Compared with N(0,1), a Student t distribution has",
+    "options": [
+      "lighter tails",
+      "heavier tails",
+      "only positive support",
+      "zero variance for every df"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Student t has heavier tails, reflecting uncertainty from estimating scale.",
+    "common_mistake": "The t distribution is symmetric on the real line."
+  },
+  {
+    "id": "ps-04-009",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For continuous X, P(a<X≤b) equals",
+    "options": [
+      "F(a)−F(b)",
+      "F(b)−F(a)",
+      "f(b)−f(a)",
+      "F(a)F(b)"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "CDF increments give interval probability F(b)−F(a).",
+    "common_mistake": "Use CDF values, not density endpoint heights."
+  },
+  {
+    "id": "ps-04-010",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If X follows Exp(λ) under the rate parameterization, E[X] is",
+    "options": [
+      "λ",
+      "λ²",
+      "1/λ",
+      "exp(−λ)"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The mean waiting time is the reciprocal of the event rate.",
+    "common_mistake": "Some texts parameterize by mean; check the convention."
+  },
+  {
+    "id": "ps-04-011",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A density is f(x)=cx² on 0<x<2. Enter c.",
+    "correct": [],
+    "nat_answer": {
+      "value": 0.375,
+      "tolerance": 0.0001
+    },
+    "solution_latex": "Normalization gives c∫₀²x²dx=c(8/3)=1, hence c=3/8.",
+    "common_mistake": "Integrate the density over its full support."
+  },
+  {
+    "id": "ps-04-012",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If X is Uniform(2,8), enter E[X].",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "The continuous-uniform mean is the midpoint (2+8)/2=5.",
+    "common_mistake": "Include both endpoints in the midpoint."
+  },
+  {
+    "id": "ps-04-013",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If X is Uniform(2,8), enter Var(X).",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "Variance is (b−a)²/12=36/12=3.",
+    "common_mistake": "Variance uses squared interval length."
+  },
+  {
+    "id": "ps-04-014",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If X follows Exp(0.5), enter −log P(X>4).",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "P(X>4)=exp(−0.5·4)=exp(−2), so the negative log is 2.",
+    "common_mistake": "Use the survival function, not the CDF."
+  },
+  {
+    "id": "ps-04-015",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If X follows N(10,9), enter the z-score of X=16.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "The standard deviation is 3, so z=(16−10)/3=2.",
+    "common_mistake": "The second normal parameter is variance here."
+  },
+  {
+    "id": "ps-04-016",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A CDF is F(x)=x² on 0≤x≤1. Enter 10P(0.2<X≤0.6).",
+    "correct": [],
+    "nat_answer": {
+      "value": 3.2,
+      "tolerance": 0.001
+    },
+    "solution_latex": "The probability is 0.36−0.04=0.32; scaling gives 3.2.",
+    "common_mistake": "Subtract CDF values, not endpoints."
+  },
+  {
+    "id": "ps-04-017",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "For exponential X, P(X>3)=0.4. Enter 100P(X>6 | X>3).",
+    "correct": [],
+    "nat_answer": {
+      "value": 40,
+      "tolerance": 0
+    },
+    "solution_latex": "Memorylessness gives P(X>6 | X>3)=P(X>3)=0.4.",
+    "common_mistake": "Reset the remaining wait after conditioning."
+  },
+  {
+    "id": "ps-04-018",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Three independent standard normals are squared and added. Enter the chi-square degrees of freedom.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "The sum of three independent squared standard normals is chi-square with 3 df.",
+    "common_mistake": "Count the squared independent standard normals."
+  },
+  {
+    "id": "ps-04-019",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If X follows N(4,16), enter Var((X−4)/4).",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "Subtracting 4 changes no variance; dividing by 4 divides variance by 16.",
+    "common_mistake": "Variance scales by the square."
+  },
+  {
+    "id": "ps-04-020",
+    "subject": "probability-statistics",
+    "module": 4,
+    "topic": "Continuous distributions & CDFs",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A density is f(x)=2x on 0<x<1. Enter its median.",
+    "correct": [],
+    "nat_answer": {
+      "value": 0.70710678,
+      "tolerance": 0.001
+    },
+    "solution_latex": "F(m)=m²=1/2, so m=1/√2≈0.7071.",
+    "common_mistake": "Median splits probability area, not support length."
+  }
+]

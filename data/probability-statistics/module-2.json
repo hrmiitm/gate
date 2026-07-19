@@ -1,0 +1,54 @@
+{
+  "subject": "probability-statistics",
+  "subjectTitle": "Probability & Statistics",
+  "module": 2,
+  "title": "Conditional probability, joint distributions & Bayes",
+  "searchTerms": [
+    "conditional",
+    "joint",
+    "marginal",
+    "bayes",
+    "total probability"
+  ],
+  "introduction": "Conditional probability is probability after the sample space has been narrowed. Bayes’ theorem simply reverses the direction of that conditioning—powerful, but only when base rates stay visible.",
+  "theory": [
+    "A joint distribution describes variables together. Sum or integrate out the unwanted variable to get a marginal; normalize a joint slice to get a conditional.",
+    "For diagnosis and classification, write the numerator and denominator before substituting. The denominator is the total probability of the evidence across every mutually exclusive cause."
+  ],
+  "formulas": [
+    "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}",
+    "P(A\\cap B)=P(A\\mid B)P(B)",
+    "P(A_i\\mid B)=\\frac{P(B\\mid A_i)P(A_i)}{\\sum_jP(B\\mid A_j)P(A_j)}",
+    "p_X(x)=\\sum_y p_{X,Y}(x,y)",
+    "f_{X\\mid Y}(x\\mid y)=\\frac{f_{X,Y}(x,y)}{f_Y(y)}"
+  ],
+  "examples": [
+    {
+      "title": "Base rates matter",
+      "problem": "A disease has prevalence 1%, sensitivity 90%, and false-positive rate 5%. Find $P(D\\mid +)$.",
+      "solution": "Bayes gives $0.9(0.01)/[0.9(0.01)+0.05(0.99)]\\approx0.1538$. A positive result is not a 90% diagnosis."
+    },
+    {
+      "title": "Marginalize",
+      "problem": "A joint PMF has $p(0,0)=.2,p(0,1)=.3,p(1,0)=.1,p(1,1)=.4$. Find $P(X=1)$.",
+      "solution": "Sum over $Y$: $0.1+0.4=0.5$."
+    },
+    {
+      "title": "Reverse conditioning",
+      "problem": "$P(A)=.4$, $P(B\\mid A)=.5$, $P(B\\mid A^c)=.2$. Find $P(A\\mid B)$.",
+      "solution": "$P(B)=.5(.4)+.2(.6)=.32$, hence $P(A\\mid B)=.2/.32=.625$."
+    },
+    {
+      "title": "Independence check",
+      "problem": "The same joint table has marginals $P(X=1)=.5$ and $P(Y=1)=.7$. Are $X,Y$ independent?",
+      "solution": "No. Independence would require $p(1,1)=.5(.7)=.35$, but the joint mass is $.4$."
+    }
+  ],
+  "pitfalls": [
+    "Swapping $P(Amid B)$ and $P(Bmid A)$.",
+    "Dropping the prior/base rate in Bayes’ theorem.",
+    "Marginalizing over the wrong support.",
+    "Checking only one cell before claiming two variables are independent."
+  ],
+  "whyGate": "Bayes is central to probabilistic reasoning, Naive Bayes, graphical models, and inference under uncertainty."
+}

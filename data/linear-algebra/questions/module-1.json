@@ -1,0 +1,414 @@
+[
+  {
+    "id": "la-01-001",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which subset of R² is a subspace?",
+    "options": [
+      "{(x,y):x+y=1}",
+      "{(x,y):x=2y}",
+      "{(x,y):x≥0}",
+      "{(x,y):xy=0}"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The equation x−2y=0 is homogeneous and its solution set is closed under linear combinations.",
+    "common_mistake": "A set through the origin can still fail closure; verify both operations."
+  },
+  {
+    "id": "la-01-002",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A basis of R³ must contain",
+    "options": [
+      "exactly 2 vectors",
+      "exactly 3 linearly independent vectors",
+      "any 3 vectors",
+      "at least 4 vectors"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Dimension of R³ is 3, so every basis has exactly three independent spanning vectors.",
+    "common_mistake": "Correct cardinality alone does not guarantee a basis."
+  },
+  {
+    "id": "la-01-003",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A set containing the zero vector is necessarily",
+    "options": [
+      "independent",
+      "dependent",
+      "a basis",
+      "a subspace"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Give the zero vector coefficient 1 and all others 0 to obtain a nontrivial zero combination.",
+    "common_mistake": "Containing zero does not itself make a set a subspace."
+  },
+  {
+    "id": "la-01-004",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The span of one nonzero vector in R³ is geometrically",
+    "options": [
+      "a point",
+      "a line through the origin",
+      "a plane not through origin",
+      "all of R³"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "All scalar multiples of one nonzero vector form a line through zero.",
+    "common_mistake": "A span always contains the origin."
+  },
+  {
+    "id": "la-01-005",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Polynomials of degree at most 2 have dimension",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "infinite"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "{1,x,x²} is a basis, so the dimension is 3.",
+    "common_mistake": "Count coefficients, including the constant term."
+  },
+  {
+    "id": "la-01-006",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If three vectors in R² are given, they are always",
+    "options": [
+      "orthogonal",
+      "linearly dependent",
+      "a basis",
+      "zero"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "No independent set can contain more vectors than the ambient dimension 2.",
+    "common_mistake": "The vectors need not include zero to be dependent."
+  },
+  {
+    "id": "la-01-007",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For subspaces U,W of a vector space, which are always subspaces?",
+    "options": [
+      "U∩W",
+      "U+W",
+      "U∪W",
+      "{0}"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Intersection and sum preserve linear combinations, and {0} is the zero subspace. A union fails closure unless one subspace contains the other.",
+    "common_mistake": "Union is the classic trap."
+  },
+  {
+    "id": "la-01-008",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Coordinates of a vector relative to a basis are",
+    "options": [
+      "never unique",
+      "unique",
+      "unique only for orthogonal bases",
+      "always the original components"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Independence gives uniqueness and spanning gives existence.",
+    "common_mistake": "An orthogonal basis is convenient, not required."
+  },
+  {
+    "id": "la-01-009",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If span(S)=V and one vector in S is a combination of the others, then",
+    "options": [
+      "S is minimal",
+      "that vector can be removed without changing the span",
+      "V is zero",
+      "S is independent"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A redundant vector contributes no new direction and can be deleted.",
+    "common_mistake": "Spanning sets may contain redundancy."
+  },
+  {
+    "id": "la-01-010",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "The solution set of Ax=0 is",
+    "options": [
+      "always a subspace",
+      "a subspace only if A is square",
+      "never a subspace",
+      "an affine set not through zero"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The null space contains zero and is closed because A(αx+βy)=0.",
+    "common_mistake": "Squareness is irrelevant."
+  },
+  {
+    "id": "la-01-011",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter the dimension of span{(1,0,0),(0,1,0),(1,1,0)}.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "The third vector is the sum of the first two; the first two are independent.",
+    "common_mistake": "Count independent directions, not listed vectors."
+  },
+  {
+    "id": "la-01-012",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If dim U=4, dim W=3, and dim(U∩W)=2, enter dim(U+W).",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "Dimension formula gives 4+3−2=5.",
+    "common_mistake": "Subtract overlap to avoid double counting."
+  },
+  {
+    "id": "la-01-013",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter the dimension of {x in R⁴:x1+x2+x3+x4=0}.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "One independent homogeneous constraint in R⁴ leaves three free variables.",
+    "common_mistake": "A homogeneous hyperplane through zero has codimension one."
+  },
+  {
+    "id": "la-01-014",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For what value a are (1,2) and (a,4) linearly dependent?",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "Dependence requires (a,4)=2(1,2), hence a=2.",
+    "common_mistake": "Match the same scalar across both coordinates."
+  },
+  {
+    "id": "la-01-015",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter the dimension of 2×3 real matrices as a vector space.",
+    "correct": [],
+    "nat_answer": {
+      "value": 6,
+      "tolerance": 0
+    },
+    "solution_latex": "Each of six entries is a free coordinate, so dimension is 2·3=6.",
+    "common_mistake": "Matrix dimensions multiply for vector-space dimension."
+  },
+  {
+    "id": "la-01-016",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If U is a 2D subspace of R⁵, enter the maximum number of linearly independent vectors in U.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "By definition, no independent subset of U exceeds dim U=2.",
+    "common_mistake": "Ambient dimension does not override subspace dimension."
+  },
+  {
+    "id": "la-01-017",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter the dimension of the solution space of x+y+z=0 and x−y=0 in R³.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "The two independent constraints leave one free parameter: x=y=t,z=−2t.",
+    "common_mistake": "Check constraint independence before subtracting their count."
+  },
+  {
+    "id": "la-01-018",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If a list of 5 vectors has rank 3, enter the number of vectors in a basis extracted from it.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0.01
+    },
+    "solution_latex": "Rank is the dimension of the span, hence an extracted basis has 3 vectors.",
+    "common_mistake": "A basis removes redundant vectors."
+  },
+  {
+    "id": "la-01-019",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter dim(U∩W) if U and W are distinct planes through the origin in R³ whose sum is R³.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0.01
+    },
+    "solution_latex": "The dimension formula gives 2+2−3=1; the planes intersect in a line.",
+    "common_mistake": "Distinct planes through the origin cannot be disjoint."
+  },
+  {
+    "id": "la-01-020",
+    "subject": "linear-algebra",
+    "module": 1,
+    "topic": "Vector spaces, basis & dimension",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter the dimension of symmetric 3×3 real matrices.",
+    "correct": [],
+    "nat_answer": {
+      "value": 6,
+      "tolerance": 0
+    },
+    "solution_latex": "Three diagonal and three upper-triangular entries are free; symmetry determines the rest.",
+    "common_mistake": "Off-diagonal pairs contribute one degree each, not two."
+  }
+]

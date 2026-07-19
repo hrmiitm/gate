@@ -1,0 +1,53 @@
+{
+  "subject": "probability-statistics",
+  "subjectTitle": "Probability & Statistics",
+  "module": 6,
+  "title": "Central Limit Theorem & sampling distributions",
+  "searchTerms": [
+    "clt",
+    "sample mean",
+    "standard error",
+    "law of large numbers",
+    "sampling"
+  ],
+  "introduction": "The Central Limit Theorem describes the shape of a properly standardized sum or mean as sample size grows. It does not say the raw data become normal, and it does not erase assumptions.",
+  "theory": [
+    "For iid observations with finite variance, the sample mean has mean $mu$ and variance $sigma^2/n$. Its standardized form approaches $N(0,1)$.",
+    "The law of large numbers is about convergence of the sample mean to $mu$; the CLT describes the scale and approximate distribution of its fluctuations."
+  ],
+  "formulas": [
+    "E[\\bar X]=\\mu,\\qquad Var(\\bar X)=\\frac{\\sigma^2}{n}",
+    "\\frac{\\bar X-\\mu}{\\sigma/\\sqrt n}\\xrightarrow{d}N(0,1)",
+    "\\sum_{i=1}^nX_i\\approx N(n\\mu,n\\sigma^2)",
+    "SE(\\bar X)=\\frac{\\sigma}{\\sqrt n}"
+  ],
+  "examples": [
+    {
+      "title": "Standard error",
+      "problem": "Population SD is 12 and $n=36$.",
+      "solution": "$SE=12/6=2$."
+    },
+    {
+      "title": "Sum approximation",
+      "problem": "iid variables have mean 2 and variance 9; $n=100$.",
+      "solution": "The sum is approximately $N(200,900)$, with standard deviation 30."
+    },
+    {
+      "title": "Mean probability",
+      "problem": "$\\mu=50,\\sigma=10,n=25$. Approximate $P(\bar X>54)$.",
+      "solution": "$Z=(54-50)/(10/5)=2$, so the probability is about $0.0228$."
+    },
+    {
+      "title": "Required size",
+      "problem": "Halve the standard error.",
+      "solution": "Because $SE\\propto1/\\sqrt n$, multiply sample size by $4$."
+    }
+  ],
+  "pitfalls": [
+    "Saying the observations themselves become normal.",
+    "Using $sigma/n$ instead of $sigma/sqrt n$ for standard error.",
+    "Forgetting variance of a sum grows with $n$.",
+    "Applying the usual CLT when variance is infinite or dependence is uncontrolled."
+  ],
+  "whyGate": "The CLT is the bridge from probability models to confidence intervals, tests, and large-sample ML estimates."
+}

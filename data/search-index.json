@@ -1,0 +1,2060 @@
+[
+  {
+    "kind": "Theory",
+    "title": "Counting & probability foundations",
+    "text": "Probability becomes much easier when you separate two jobs: count the outcomes correctly, then assign probability. Most traps in this module come from mixing order, replacement, or independence without saying so.",
+    "tags": "permutation combination axiom independence mutually exclusive sample space",
+    "url": "subjects/module.html?subject=probability-statistics&module=1"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "How many three-letter strings with distinct letters can be formed from five distinct letters?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "Two fair dice are rolled. What is $P(\\text{sum}=7)$?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "If $A$ and $B$ are mutually exclusive with $P(A)=0.3$ and $P(B)=0.4$, then $P(A\\cup B)$ is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "Which set must be an event in every probability model?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "For any event $A$ with $P(A)=0.27$, $P(A^c)$ equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "Ten people form a committee of three. How many committees are possible?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "Which statements are always true for events $A,B$?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "If independent events $A,B$ satisfy $P(A)=1/2$ and $P(A\\cup B)=3/4$, then $P(B)$ is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "Which pair of events from one fair die roll is independent?",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "A password has two distinct letters followed by two distinct digits. Reuse is forbidden within each group. The count is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "How many binary strings of length 8 contain exactly three ones?",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "How many nonnegative integer solutions satisfy $x+y+z=10$?",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "How many positive integer solutions satisfy $x_1+x_2+x_3+x_4=10$?",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "From 7 men and 5 women, how many 4-person committees contain exactly 2 women?",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "A fair coin is tossed 5 times. Enter $32P(\\text{at least one head})$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "Events $A,B$ have $P(A)=0.6$, $P(B)=0.5$, and $P(A\\cup B)=0.8$. Enter $10P(A\\cap B)$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "A box contains 4 red, 3 blue, and 2 green balls. Two are drawn without replacement. How many unordered pairs have different colors?",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "How many onto functions exist from a 3-element set to a 2-element set?",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "A fair die is rolled twice. Enter $36P(\\text{the second result exceeds the first})$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Counting & probability foundations",
+    "text": "In a class of 30, 18 know Python, 14 know SQL, and 5 know neither. How many know both?",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=1#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "Conditional probability is probability after the sample space has been narrowed. Bayes’ theorem simply reverses the direction of that conditioning—powerful, but only when base rates stay visible.",
+    "tags": "conditional joint marginal bayes total probability",
+    "url": "subjects/module.html?subject=probability-statistics&module=2"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "If $P(A\\cap B)=0.18$ and $P(B)=0.30$, then $P(A\\mid B)$ is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "A test has sensitivity 0.9. This means",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "For a joint PMF $p(x,y)$, the marginal $p_X(x)$ is obtained by",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "If $A$ and $B$ are independent and $P(B)>0$, then $P(A\\mid B)$ equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "Which denominator appears in Bayes’ theorem for causes $C_i$ partitioning the sample space?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "If $p_{X,Y}(x,y)=p_X(x)p_Y(y)$ for every support point, then $X,Y$ are",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "A partition $C_1,\\ldots,C_k$ satisfies which properties?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "Suppose $P(A)=.4$, $P(B)=.5$, $P(A\\mid B)=.4$. Then $A$ and $B$ are",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "A fair coin is tossed twice. Given at least one head, the probability of two heads is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "For continuous variables, $f_{X\\mid Y}(x\\mid y)$ equals",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "A factory has machines A and B producing 60% and 40% of items, with defect rates 2% and 5%. Enter $1000P(A\\mid\\text{defect})$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "Given $P(A)=0.5$, $P(B\\mid A)=0.8$, and $P(B\\mid A^c)=0.2$, enter $10P(B)$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "A joint PMF is $p(x,y)=c(x+y)$ for $x,y\\in\\{1,2\\}$. Enter $10c$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "For the joint masses $p(0,0)=.1,p(0,1)=.2,p(1,0)=.3,p(1,1)=.4$, enter $10P(Y=1\\mid X=1)$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "Two cards are drawn without replacement from a standard deck. Enter $1000P(\\text{second is ace}\\mid\\text{first is ace})$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "Box 1 is selected with probability .3 and has 2 red of 5 balls. Box 2 is selected otherwise and has 6 red of 10. Enter $100P(\\text{Box 1}\\mid\\text{red})$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "If $P(A\\mid B)=.7$, $P(B)=.4$, and $P(A)=.5$, enter $100P(B\\mid A)$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "A family has two children with independent, equally likely sexes. Given at least one is a girl, enter $3P(\\text{both girls})$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "The density $f(x,y)=c$ on $0<y<x<1$. Enter $10c$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Conditional probability, joint distributions & Bayes",
+    "text": "If $X,Y$ are independent, $P(X\\le2)=.4$ and $P(Y>3)=.25$, enter $100P(X\\le2,Y>3)$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=2#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Random variables & discrete distributions",
+    "text": "A random variable turns outcomes into numbers; a PMF tells you how probability is distributed across those numbers. Learn each family by its experiment, not by a detached formula.",
+    "tags": "pmf bernoulli binomial poisson discrete uniform expectation",
+    "url": "subjects/module.html?subject=probability-statistics&module=3"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "A Bernoulli random variable can take values",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "If $X\\sim Bin(n,p)$, then $E[X]$ is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "If $X\\sim Pois(\\lambda)$, which equality holds?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "Which is a valid PMF property?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "For discrete uniform $X$ on $\\{1,2,3,4,5\\}$, $E[X]$ is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "The sum of independent $Pois(2)$ and $Pois(5)$ variables follows",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "For any integrable discrete random variables $X,Y$, which are true?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "A count of successes in 12 independent trials with success probability .3 is modeled by",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "For $X\\sim Bin(n,p)$, $P(X=0)$ equals",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "If $Y=2X+3$, then $Var(Y)$ is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "For $X\\sim Bin(10,0.2)$, enter $E[X]$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "For $X\\sim Bin(10,0.2)$, enter $Var(X)$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "A PMF is $p(k)=ck$ for $k=1,2,3,4$. Enter $10c$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "For that PMF $p(k)=k/10$, enter $10E[X]$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "If $X\\sim Pois(3)$, enter $1000P(X=0)$ rounded to two decimals.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "Independent Bernoulli variables have parameters .2 and .7. Enter $100E[X+Y]$.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "A fair die value is $X$. Enter $12E[X]$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "A random variable has $E[X]=4$ and $E[X^2]=22$. Enter $Var(X)$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "Independent $X\\sim Bin(4,.5)$ and $Y\\sim Bin(6,.5)$. Enter $E[X+Y]$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Random variables & discrete distributions",
+    "text": "For $X\\sim Pois(4)$, enter $P(X=1)/P(X=0)$.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=3#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Continuous distributions & CDFs",
+    "text": "For a continuous variable, probability is area—not height. The CDF unifies discrete and continuous cases and often turns a difficult density question into endpoint arithmetic.",
+    "tags": "pdf cdf uniform exponential normal t distribution chi square",
+    "url": "subjects/module.html?subject=probability-statistics&module=4"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "For a continuous random variable X, which statement is always true?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "If X is Uniform(a,b), its density on (a,b) is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "The derivative of an absolutely continuous CDF F is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "Which continuous distribution is memoryless?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "If X follows N(μ,σ²), then (X−μ)/σ follows",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "The support of a chi-square random variable is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "Which are properties of every CDF?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "Compared with N(0,1), a Student t distribution has",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "For continuous X, P(a<X≤b) equals",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "If X follows Exp(λ) under the rate parameterization, E[X] is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "A density is f(x)=cx² on 0<x<2. Enter c.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "If X is Uniform(2,8), enter E[X].",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "If X is Uniform(2,8), enter Var(X).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "If X follows Exp(0.5), enter −log P(X>4).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "If X follows N(10,9), enter the z-score of X=16.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "A CDF is F(x)=x² on 0≤x≤1. Enter 10P(0.2<X≤0.6).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "For exponential X, P(X>3)=0.4. Enter 100P(X>6 | X>3).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "Three independent standard normals are squared and added. Enter the chi-square degrees of freedom.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "If X follows N(4,16), enter Var((X−4)/4).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Continuous distributions & CDFs",
+    "text": "A density is f(x)=2x on 0<x<1. Enter its median.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=4#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Descriptive statistics & moments",
+    "text": "Summary statistics compress a dataset or distribution. The exam tests whether you know exactly what information survives that compression—and how location, scale, and dependence change under transformations.",
+    "tags": "mean median mode variance standard deviation covariance correlation conditional expectation",
+    "url": "subjects/module.html?subject=probability-statistics&module=5"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "Which statistic is most resistant to one extreme outlier?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "If 7 is added to every observation, the sample standard deviation",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "Correlation is always between",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "If X,Y are independent with finite second moments, then",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "For data 1,2,2,8, the mode is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "Which identity is the law of total expectation?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "Which transformations preserve correlation?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "If Corr(X,Y)=0, which conclusion is always justified when SDs are positive?",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "The usual unbiased sample variance uses denominator",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "The law of total variance is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "Enter the mean of 2,4,6,8.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "Enter the population variance of 1,3,5.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "Five values have mean 12. A sixth value 18 is added. Enter the new mean.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "If E[X]=3 and E[X²]=14, enter Var(X).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "If Cov(X,Y)=6, σX=2, and σY=3, enter Corr(X,Y).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "If Var(X)=4, enter Var(3X−7).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "Given E[X]=2,E[Y]=5,E[XY]=13, enter Cov(X,Y).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "If E[Var(X|Y)]=4 and Var(E[X|Y])=7, enter Var(X).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "For sorted data 1,2,3,4,100, enter the median.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Descriptive statistics & moments",
+    "text": "If Corr(X,Y)=−0.8, enter Corr(2X+1,−3Y+4).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=5#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "The Central Limit Theorem describes the shape of a properly standardized sum or mean as sample size grows. It does not say the raw data become normal, and it does not erase assumptions.",
+    "tags": "clt sample mean standard error law of large numbers sampling",
+    "url": "subjects/module.html?subject=probability-statistics&module=6"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "For iid observations with variance σ², Var(sample mean) is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "The Central Limit Theorem primarily says that",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "If sample size is multiplied by 4, standard error is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "The law of large numbers concerns",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "For iid Xi with variance 9, Var(sum of 10 Xi) is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "Which condition is central to the classical iid CLT?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "For iid data with finite variance, which are true?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "If the original population is normal, the sample mean is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "A continuity correction is used when approximating",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "Consistency informally means an estimator",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "Population SD is 15 and n=25. Enter standard error of the mean.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "iid variables have mean 4 and variance 9. For n=20, enter E[sum Xi].",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "For the same variables and n=20, enter Var(sum Xi).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "Population variance is 16 and n=64. Enter Var(sample mean).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "The standardized mean is (sample mean−50)/(10/√100). If sample mean=52, enter z.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "To reduce a standard error from 4 to 2, by what factor must n increase?",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "For iid Bernoulli(0.3) data, enter E[sample mean].",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "For n=100 Bernoulli(0.3) data, enter 1000Var(sample mean).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "A sum has variance 1600. Enter its standard deviation.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Central Limit Theorem & sampling distributions",
+    "text": "If Z=(sample mean−μ)/(σ/√n) and sample mean=μ, enter Z.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=6#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Statistical inference",
+    "text": "Inference turns a sample into a calibrated statement about a population. The core skill is choosing the statistic whose reference distribution matches the assumptions—not memorizing one universal test.",
+    "tags": "confidence interval z test t test chi squared hypothesis p value",
+    "url": "subjects/module.html?subject=probability-statistics&module=7"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "A p-value is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "At α=0.05, a p-value of 0.03 leads to",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "For a small normal sample with unknown variance, a one-mean test uses",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "A Type I error means",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "For an r×c contingency table, independence-test df is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "A 95% confidence procedure means",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "Which reduce a known-variance mean CI margin?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "Statistical power is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "A two-sided alternative for μ0 is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "Expected count in cell (i,j) under independence is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "Known σ=10, n=100, sample mean=52. For H0:μ=50, enter z.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "Sample mean=20, σ=4, n=16, z*=1.96. Enter the margin.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "A one-sample t test has n=12. Enter degrees of freedom.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "A chi-square independence test uses a 4×3 table. Enter df.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "Observed and expected counts are 12 and 8. Enter the chi-square contribution.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "If α=.05, enter 100P(Type I error) for an exact-size test.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "A 90% z interval has z*=1.645, σ=6, n=36. Enter margin.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "To halve a known-variance interval margin, by what factor must n change?",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "In a table with row total 40, column total 30, grand total 100, enter expected count.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Statistical inference",
+    "text": "A test has power 0.8. Enter its Type II error probability.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=probability-statistics&module=7#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Vector spaces, basis & dimension",
+    "text": "A vector space is a set where linear combinations stay legal. Most exam questions collapse once you ask two disciplined questions: what spans the set, and are those spanning vectors independent?",
+    "tags": "vector space subspace span independence basis dimension",
+    "url": "subjects/module.html?subject=linear-algebra&module=1"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Which subset of R² is a subspace?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "A basis of R³ must contain",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "A set containing the zero vector is necessarily",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "The span of one nonzero vector in R³ is geometrically",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Polynomials of degree at most 2 have dimension",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "If three vectors in R² are given, they are always",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "For subspaces U,W of a vector space, which are always subspaces?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Coordinates of a vector relative to a basis are",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "If span(S)=V and one vector in S is a combination of the others, then",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "The solution set of Ax=0 is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Enter the dimension of span{(1,0,0),(0,1,0),(1,1,0)}.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "If dim U=4, dim W=3, and dim(U∩W)=2, enter dim(U+W).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Enter the dimension of {x in R⁴:x1+x2+x3+x4=0}.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "For what value a are (1,2) and (a,4) linearly dependent?",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Enter the dimension of 2×3 real matrices as a vector space.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "If U is a 2D subspace of R⁵, enter the maximum number of linearly independent vectors in U.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Enter the dimension of the solution space of x+y+z=0 and x−y=0 in R³.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "If a list of 5 vectors has rank 3, enter the number of vectors in a basis extracted from it.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Enter dim(U∩W) if U and W are distinct planes through the origin in R³ whose sum is R³.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Vector spaces, basis & dimension",
+    "text": "Enter the dimension of symmetric 3×3 real matrices.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=1#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Matrices & special matrices",
+    "text": "Special matrices are compressed information: one property can determine eigenvalues, norms, inverses, or geometry without any entry-by-entry calculation.",
+    "tags": "matrix orthogonal projection idempotent partition symmetric",
+    "url": "subjects/module.html?subject=linear-algebra&module=2"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "If Q is orthogonal, then Q inverse equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "An idempotent matrix P satisfies",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "Eigenvalues of an idempotent matrix belong to",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "A real orthogonal matrix preserves",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "An orthogonal projection matrix is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "The determinant of a real orthogonal matrix is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "Which statements hold for an orthogonal projection P?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "If P projects onto a k-dimensional subspace, trace(P) equals",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "For nonzero vector a, projection onto span(a) is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "Which matrix is necessarily symmetric?",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "Enter det(Q)² for any real orthogonal square matrix Q.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "P is a 5×5 projection of rank 2. Enter trace(P).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "For P=[[1,0],[0,0]], enter the squared norm of P(3,4)ᵀ.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "If Q is orthogonal and x has norm 7, enter norm(Qx).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "Enter rank of the 3×3 all-ones matrix.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "P is idempotent and invertible. Enter trace(P) for a 4×4 P.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "Enter the rank of diag(1,0,1,0,1).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "For unit a=(3/5,4/5), enter 25 times the (1,1) entry of aaᵀ.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "If A is 2×3 and B is 3×4, enter the number of entries in AB.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Matrices & special matrices",
+    "text": "A 6×6 orthogonal projection has nullity 4. Enter its trace.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=2#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "Gaussian elimination is not just a solving algorithm. Its pivots expose rank, free variables, consistency, and the entire geometry of a linear system in one pass.",
+    "tags": "linear system gaussian elimination rank nullity rref consistency",
+    "url": "subjects/module.html?subject=linear-algebra&module=3"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "A system Ax=b is consistent exactly when",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "For an m×n matrix, rank plus nullity equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "A row [0 0 0 | 5] in an augmented echelon matrix means",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "Elementary row operations preserve",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "If a square n×n matrix has rank n, then Ax=b has",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "A pivot column in row echelon form corresponds to",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "Which operations are valid elementary row operations?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "The null space of A contains",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "If Ax=b has one solution xp, then every solution is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "Row rank and column rank of a matrix are",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "A 4×7 matrix has rank 3. Enter its nullity.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "A homogeneous system has 6 variables and 4 pivots. Enter its number of free variables.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "Enter rank of [[1,2],[2,4]].",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "Enter nullity of the 3×3 identity matrix.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "The RREF of a 3×5 matrix has 2 pivots. Enter dimension of its row space.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "Enter the rank of a nonzero 4×4 matrix whose every row is a scalar multiple of the first.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "A 3×4 matrix A has rank 3. Enter dimension of its left null space Null(Aᵀ).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "If rank(A)=rank([A|b])=2 and A has 5 columns, enter the number of free variables.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "Enter rank of a 5×3 matrix with three linearly independent columns.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Linear systems, elimination, rank & nullity",
+    "text": "A linear system in 4 unknowns has a unique solution. Enter nullity of its coefficient matrix.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=3#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Determinants",
+    "text": "The determinant is a signed volume-scaling factor. In exam problems, its transformation rules are usually more valuable than a long cofactor expansion.",
+    "tags": "determinant invertible cofactor volume permutation",
+    "url": "subjects/module.html?subject=linear-algebra&module=4"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "The determinant of a triangular matrix equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "Swapping two rows of A",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "Adding a multiple of one row to another",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "A square matrix is invertible exactly when",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "Which identity is valid?",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "If A is 3×3, det(2A) equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "If det(A)=0 for square A, which are true?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "det(Aᵀ) is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "If det(A)=−2, then det(A inverse) is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "The absolute determinant of a linear map gives",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "Enter det([[3,0],[0,5]]).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "Enter det([[1,2],[3,4]]).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "If det(A)=3 and det(B)=−2, enter det(AB).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "For 4×4 A with det(A)=2, enter det(3A).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "If det(A)=5, enter det(AᵀA).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "A matrix is obtained from det(A)=7 by two row swaps. Enter its determinant.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "Enter det of a 3×3 matrix with two identical rows.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "Eigenvalues of a 3×3 matrix are 2,3,−1. Enter its determinant.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "If det(A)=4, enter det(A² inverse).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Determinants",
+    "text": "Enter the determinant of the 4×4 identity matrix.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=4#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "An eigenvector is a direction a transformation does not rotate away from itself; its eigenvalue is the scaling along that direction. This viewpoint is faster and safer than treating the topic as determinant algebra alone.",
+    "tags": "eigenvalue eigenvector diagonalization trace spectral",
+    "url": "subjects/module.html?subject=linear-algebra&module=5"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "An eigenvector must be",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "Eigenvalues of a triangular matrix are",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "For a real symmetric matrix, eigenvalues are",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "Eigenvectors for distinct eigenvalues of a real symmetric matrix are",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "A matrix is diagonalizable when it has",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "Trace equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "For A=PDP inverse, which are true?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "A repeated eigenvalue guarantees diagonalizability",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "If Av=λv, then A²v equals",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "Zero is an eigenvalue exactly when A is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "Enter eigenvalue sum of a matrix with trace 9.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "A 3×3 matrix has eigenvalues 1,2,4. Enter its determinant.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "Enter the largest eigenvalue of diag(−2,5,3).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "If Av=3v, enter the eigenvalue of A⁵ for the same v.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "A 2×2 matrix has trace 7 and one eigenvalue 2. Enter the other.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "A 2×2 matrix has determinant 12 and one eigenvalue 3. Enter the other.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "Enter the geometric multiplicity of eigenvalue 1 for [[1,1],[0,1]].",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "A real symmetric 4×4 matrix has four distinct eigenvalues. Enter the maximum size of an orthonormal eigenbasis.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "If eigenvalues of A are 2 and −1, enter trace(A³).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Eigenvalues, eigenvectors & diagonalization",
+    "text": "Enter the spectral radius of diag(−6,2,5).",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=5#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "Quadratic forms",
+    "text": "A quadratic form $x^TAx$ measures curvature and signed energy. Symmetry lets you read its behavior from eigenvalues or principal minors instead of testing infinitely many vectors.",
+    "tags": "quadratic form positive definite semidefinite sylvester hessian",
+    "url": "subjects/module.html?subject=linear-algebra&module=6"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "A symmetric matrix is positive definite exactly when",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "A positive semidefinite matrix may have eigenvalues",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "For skew-symmetric K, xᵀKx equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "The matrix representing 2x²+6xy+5y² is",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "An indefinite quadratic form takes",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "Sylvester’s criterion for symmetric positive definiteness requires",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "Which symmetric diagonal matrices are positive semidefinite?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "At a stationary point, a positive-definite Hessian implies",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "Only which part of A affects xᵀAx?",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "If A is positive definite, then A is",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "For q=3x²+4xy+2y², enter the off-diagonal entry in its symmetric matrix.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "Enter xᵀAx for A=diag(2,3) and x=(1,2).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "A symmetric 2×2 matrix has eigenvalues 4 and −1. Enter the number of positive eigenvalues.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "Enter the smallest eigenvalue of diag(5,0,2).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "For A=[[2,1],[1,2]], enter its determinant.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "Enter q(1,−1) for q(x,y)=x²+2xy+y².",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "A positive-definite 3×3 matrix has eigenvalues 1,2,a. Enter the smallest integer a allowed.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "If A has eigenvalues −2,−3, enter the number of negative eigenvalues of −A.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "Enter xᵀKx for any real skew-symmetric K and x.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "Quadratic forms",
+    "text": "A symmetric matrix has inertia (2 positive,1 zero,3 negative). Enter its dimension.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=6#practice"
+  },
+  {
+    "kind": "Theory",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "LU makes repeated linear solves efficient; SVD reveals the geometry and effective rank of any rectangular matrix. Together they bridge symbolic linear algebra and numerical data science.",
+    "tags": "lu svd singular value pca low rank condition number",
+    "url": "subjects/module.html?subject=linear-algebra&module=7"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "Singular values of A are square roots of eigenvalues of",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "Singular values are always",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "In A=UΣVᵀ, columns of V are",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "Matrix rank equals",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "The best rank-k approximation in Frobenius norm is obtained by",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "LU decomposition primarily factors A into",
+    "tags": "MCQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "Which statements about SVD are true?",
+    "tags": "MSQ foundation",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "If a zero pivot occurs during LU without pivoting, one may need",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "The squared Frobenius norm equals",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "For centered data matrix X, PCA directions are tied to",
+    "tags": "MCQ gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "Enter singular values sum for diag(3,−2).",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "A matrix has singular values 5,2,0. Enter its rank.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "A matrix has singular values 4,3. Enter its squared Frobenius norm.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "For singular values 8,3,1, enter the spectral-norm error of the best rank-1 approximation.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "For singular values 8,3,1, enter squared Frobenius error of the best rank-1 approximation.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "For nonsingular A with σmax=12 and σmin=3, enter its 2-norm condition number.",
+    "tags": "NAT gate-standard",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "Enter the elimination multiplier for row 2 when A=[[2,1],[6,5]] is factored by LU.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "For A=[[2,1],[6,5]], enter the second diagonal pivot of U.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "A 7×4 matrix has full column rank. Enter number of positive singular values.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  },
+  {
+    "kind": "Question",
+    "title": "LU decomposition & Singular Value Decomposition",
+    "text": "A rank-2 matrix has shape 5×8. Enter rank of its Moore–Penrose pseudoinverse.",
+    "tags": "NAT challenge",
+    "url": "subjects/module.html?subject=linear-algebra&module=7#practice"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "subject": "probability-statistics",
+  "subjectTitle": "Probability & Statistics",
+  "module": 1,
+  "title": "Counting & probability foundations",
+  "searchTerms": [
+    "permutation",
+    "combination",
+    "axiom",
+    "independence",
+    "mutually exclusive",
+    "sample space"
+  ],
+  "introduction": "Probability becomes much easier when you separate two jobs: count the outcomes correctly, then assign probability. Most traps in this module come from mixing order, replacement, or independence without saying so.",
+  "theory": [
+    "Start by defining the experiment and its sample space. For equally likely outcomes, probability is favorable outcomes divided by total outcomes; outside that setting, use the axioms rather than counting.",
+    "Independence means learning one event occurred does not change the probability of the other. Mutual exclusivity means the events cannot occur together. Except for zero-probability edge cases, mutually exclusive events are not independent."
+  ],
+  "formulas": [
+    "P(A^c)=1-P(A)",
+    "P(A\\cup B)=P(A)+P(B)-P(A\\cap B)",
+    "P(A\\cap B)=P(A)P(B)\\quad\\text{if independent}",
+    "{}^nP_r=\\frac{n!}{(n-r)!},\\qquad {n\\choose r}=\\frac{n!}{r!(n-r)!}",
+    "\\#\\{x_1+\\cdots+x_k=n,\\ x_i\\ge0\\}={n+k-1\\choose k-1}"
+  ],
+  "examples": [
+    {
+      "title": "Order changes the count",
+      "problem": "Choose a president and secretary from 8 people.",
+      "solution": "The roles differ, so order matters: $8\\times7=56$. Using ${8\\choose2}$ would forget who holds which role."
+    },
+    {
+      "title": "At least one",
+      "problem": "Find the probability of at least one six in four fair die rolls.",
+      "solution": "Use the complement. No six has probability $(5/6)^4$, so the answer is $1-(5/6)^4$."
+    },
+    {
+      "title": "Exclusive is not independent",
+      "problem": "A fair die gives $A={1,2}$ and $B={3,4}$.",
+      "solution": "$A\\cap B=\\varnothing$, but $P(A)P(B)=1/9\\ne0$. They are mutually exclusive and dependent."
+    },
+    {
+      "title": "Stars and bars",
+      "problem": "Count nonnegative integer solutions to $x+y+z=7$.",
+      "solution": "Place two bars among nine positions: ${9\\choose2}=36$."
+    }
+  ],
+  "pitfalls": [
+    "Using permutations when selected roles are interchangeable.",
+    "Multiplying probabilities without first establishing independence.",
+    "Calling disjoint positive-probability events independent.",
+    "Counting a non-uniform sample space as if every outcome were equally likely."
+  ],
+  "whyGate": "Counting and event algebra sit underneath discrete distributions, Bayes questions, randomized algorithms, and several General Aptitude problems."
+}

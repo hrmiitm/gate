@@ -1,0 +1,414 @@
+[
+  {
+    "id": "la-04-001",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The determinant of a triangular matrix equals",
+    "options": [
+      "sum of diagonal entries",
+      "product of diagonal entries",
+      "largest diagonal entry",
+      "rank"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Only the identity permutation contributes, giving the diagonal product.",
+    "common_mistake": "Trace is the diagonal sum."
+  },
+  {
+    "id": "la-04-002",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Swapping two rows of A",
+    "options": [
+      "leaves det unchanged",
+      "negates det",
+      "squares det",
+      "makes det zero"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "One row interchange multiplies the determinant by −1.",
+    "common_mistake": "Two swaps would restore the sign."
+  },
+  {
+    "id": "la-04-003",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Adding a multiple of one row to another",
+    "options": [
+      "leaves det unchanged",
+      "always makes det zero",
+      "multiplies det by that multiple",
+      "negates det"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Row replacement preserves determinant.",
+    "common_mistake": "Row scaling is the operation that scales determinant."
+  },
+  {
+    "id": "la-04-004",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A square matrix is invertible exactly when",
+    "options": [
+      "det=0",
+      "det≠0",
+      "trace=0",
+      "all entries are nonzero"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Nonzero determinant is equivalent to full rank and invertibility.",
+    "common_mistake": "Zero entries can occur in invertible matrices."
+  },
+  {
+    "id": "la-04-005",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which identity is valid?",
+    "options": [
+      "det(A+B)=det(A)+det(B)",
+      "det(AB)=det(A)det(B)",
+      "det(Aᵀ)=−det(A)",
+      "det(2A)=2det(A) for all sizes"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Determinants multiply over matrix products.",
+    "common_mistake": "Determinant is not additive."
+  },
+  {
+    "id": "la-04-006",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If A is 3×3, det(2A) equals",
+    "options": [
+      "2det(A)",
+      "4det(A)",
+      "8det(A)",
+      "det(A)+2"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Scaling all three rows by 2 multiplies determinant by 2³=8.",
+    "common_mistake": "The scalar factor is raised to matrix order."
+  },
+  {
+    "id": "la-04-007",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If det(A)=0 for square A, which are true?",
+    "options": [
+      "Columns are dependent",
+      "A is singular",
+      "Ax=0 has a nonzero solution",
+      "A has an inverse"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Zero determinant, dependence, singularity, and a nontrivial null space are equivalent.",
+    "common_mistake": "Invertibility requires nonzero determinant."
+  },
+  {
+    "id": "la-04-008",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "det(Aᵀ) is",
+    "options": [
+      "det(A)",
+      "−det(A)",
+      "1/det(A)",
+      "0"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Transposition does not change the permutation expansion value.",
+    "common_mistake": "Transpose preserves determinant."
+  },
+  {
+    "id": "la-04-009",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If det(A)=−2, then det(A inverse) is",
+    "options": [
+      "2",
+      "−2",
+      "1/2",
+      "−1/2"
+    ],
+    "correct": [
+      "D"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The inverse determinant is the reciprocal, −1/2.",
+    "common_mistake": "Keep the original sign when taking reciprocal."
+  },
+  {
+    "id": "la-04-010",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "The absolute determinant of a linear map gives",
+    "options": [
+      "rank only",
+      "volume scaling factor",
+      "trace",
+      "number of eigenvectors"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Absolute determinant scales n-dimensional volume.",
+    "common_mistake": "The sign records orientation."
+  },
+  {
+    "id": "la-04-011",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter det([[3,0],[0,5]]).",
+    "correct": [],
+    "nat_answer": {
+      "value": 15,
+      "tolerance": 0
+    },
+    "solution_latex": "The diagonal product is 3·5=15.",
+    "common_mistake": "Off-diagonal zeros make this immediate."
+  },
+  {
+    "id": "la-04-012",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter det([[1,2],[3,4]]).",
+    "correct": [],
+    "nat_answer": {
+      "value": -2,
+      "tolerance": 0
+    },
+    "solution_latex": "For 2×2, det=1·4−2·3=−2.",
+    "common_mistake": "Respect the subtraction order ad−bc."
+  },
+  {
+    "id": "la-04-013",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If det(A)=3 and det(B)=−2, enter det(AB).",
+    "correct": [],
+    "nat_answer": {
+      "value": -6,
+      "tolerance": 0
+    },
+    "solution_latex": "Multiplicativity gives 3(−2)=−6.",
+    "common_mistake": "Matrix products need not commute, but determinant products do."
+  },
+  {
+    "id": "la-04-014",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For 4×4 A with det(A)=2, enter det(3A).",
+    "correct": [],
+    "nat_answer": {
+      "value": 162,
+      "tolerance": 0
+    },
+    "solution_latex": "det(3A)=3⁴·2=81·2=162.",
+    "common_mistake": "Scale factor applies once per row."
+  },
+  {
+    "id": "la-04-015",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If det(A)=5, enter det(AᵀA).",
+    "correct": [],
+    "nat_answer": {
+      "value": 25,
+      "tolerance": 0
+    },
+    "solution_latex": "det(AᵀA)=det(Aᵀ)det(A)=5²=25.",
+    "common_mistake": "Transpose does not change determinant."
+  },
+  {
+    "id": "la-04-016",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A matrix is obtained from det(A)=7 by two row swaps. Enter its determinant.",
+    "correct": [],
+    "nat_answer": {
+      "value": 7,
+      "tolerance": 0
+    },
+    "solution_latex": "Each swap changes sign, so two swaps multiply by (−1)²=1.",
+    "common_mistake": "Count swap parity."
+  },
+  {
+    "id": "la-04-017",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter det of a 3×3 matrix with two identical rows.",
+    "correct": [],
+    "nat_answer": {
+      "value": 0,
+      "tolerance": 0
+    },
+    "solution_latex": "Swapping identical rows changes no matrix but would negate determinant; therefore it is zero.",
+    "common_mistake": "Repeated rows are dependent."
+  },
+  {
+    "id": "la-04-018",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Eigenvalues of a 3×3 matrix are 2,3,−1. Enter its determinant.",
+    "correct": [],
+    "nat_answer": {
+      "value": -6,
+      "tolerance": 0
+    },
+    "solution_latex": "Determinant is the product of eigenvalues: 2·3·(−1)=−6.",
+    "common_mistake": "Count eigenvalues with algebraic multiplicity."
+  },
+  {
+    "id": "la-04-019",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If det(A)=4, enter det(A² inverse).",
+    "correct": [],
+    "nat_answer": {
+      "value": 0.0625,
+      "tolerance": 0.0001
+    },
+    "solution_latex": "det((A²)⁻¹)=1/det(A²)=1/4²=1/16.",
+    "common_mistake": "Apply both the power and reciprocal."
+  },
+  {
+    "id": "la-04-020",
+    "subject": "linear-algebra",
+    "module": 4,
+    "topic": "Determinants",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter the determinant of the 4×4 identity matrix.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "The diagonal product is 1.",
+    "common_mistake": "Identity determinant is one in every dimension."
+  }
+]

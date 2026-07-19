@@ -1,0 +1,54 @@
+{
+  "subject": "linear-algebra",
+  "subjectTitle": "Linear Algebra",
+  "module": 6,
+  "title": "Quadratic forms",
+  "searchTerms": [
+    "quadratic form",
+    "positive definite",
+    "semidefinite",
+    "sylvester",
+    "hessian"
+  ],
+  "introduction": "A quadratic form $x^TAx$ measures curvature and signed energy. Symmetry lets you read its behavior from eigenvalues or principal minors instead of testing infinitely many vectors.",
+  "theory": [
+    "Only the symmetric part of a matrix affects $x^TAx$. Positive definiteness means the form is positive for every nonzero vector; semidefiniteness allows zero directions.",
+    "For real symmetric matrices, definiteness is determined by eigenvalue signs. Sylvester’s criterion uses leading principal minors for positive definiteness."
+  ],
+  "formulas": [
+    "x^TAx=x^T\\left(\\frac{A+A^T}{2}\\right)x",
+    "A\\succ0\\iff\\lambda_i(A)>0\\ \\forall i",
+    "A\\succeq0\\iff\\lambda_i(A)\\ge0\\ \\forall i",
+    "A\\succ0\\iff\\Delta_1,\\ldots,\\Delta_n>0\\quad(A=A^T)",
+    "x^TAx=\\sum_i\\lambda_i y_i^2"
+  ],
+  "examples": [
+    {
+      "title": "Two-variable form",
+      "problem": "$q=2x^2+4xy+3y^2$.",
+      "solution": "$A=\\begin{bmatrix}2&2\\\\2&3\\end{bmatrix}$. Leading minors are 2 and 2, so $A$ is positive definite."
+    },
+    {
+      "title": "Indefinite",
+      "problem": "$A=\\operatorname{diag}(2,-1)$.",
+      "solution": "$q(1,0)=2>0$ and $q(0,1)=-1<0$, so the form is indefinite."
+    },
+    {
+      "title": "Skew part vanishes",
+      "problem": "$K^T=-K$.",
+      "solution": "$x^TKx=-(x^TKx)^T$, so the scalar equals its negative and must be zero."
+    },
+    {
+      "title": "Optimization link",
+      "problem": "A twice differentiable function has positive-definite Hessian at a stationary point.",
+      "solution": "The point is a strict local minimum."
+    }
+  ],
+  "pitfalls": [
+    "Applying Sylvester’s criterion to a nonsymmetric representation without symmetrizing.",
+    "Calling a matrix positive definite because diagonal entries are positive.",
+    "Treating positive semidefinite as strictly positive.",
+    "Forgetting the factor of two in off-diagonal terms such as $2a_{12}xy$."
+  ],
+  "whyGate": "Quadratic forms encode loss curvature, covariance geometry, regularization, and second-order optimality."
+}

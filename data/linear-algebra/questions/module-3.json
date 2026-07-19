@@ -1,0 +1,414 @@
+[
+  {
+    "id": "la-03-001",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A system Ax=b is consistent exactly when",
+    "options": [
+      "rank(A)<rank([A|b])",
+      "rank(A)=rank([A|b])",
+      "A is square",
+      "b is nonzero"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Equal ranks mean the augmented column introduces no contradiction.",
+    "common_mistake": "A rectangular system can be consistent."
+  },
+  {
+    "id": "la-03-002",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For an m×n matrix, rank plus nullity equals",
+    "options": [
+      "m",
+      "n",
+      "m+n",
+      "min(m,n)"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Rank-nullity for the map from Rⁿ uses domain dimension n.",
+    "common_mistake": "Use the number of columns."
+  },
+  {
+    "id": "la-03-003",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A row [0 0 0 | 5] in an augmented echelon matrix means",
+    "options": [
+      "a free variable",
+      "a unique solution",
+      "inconsistency",
+      "rank zero"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "It represents the impossible equation 0=5.",
+    "common_mistake": "The augmented entry matters."
+  },
+  {
+    "id": "la-03-004",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Elementary row operations preserve",
+    "options": [
+      "the exact columns",
+      "the solution set of an augmented system",
+      "all eigenvalues",
+      "the determinant unchanged in every case"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Each row operation produces an equivalent system.",
+    "common_mistake": "Row swaps/scalings can change determinant."
+  },
+  {
+    "id": "la-03-005",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If a square n×n matrix has rank n, then Ax=b has",
+    "options": [
+      "no solution for some b",
+      "a unique solution for every b",
+      "infinitely many solutions",
+      "only the zero solution for every b"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Full rank makes A invertible.",
+    "common_mistake": "For nonzero b, the unique solution need not be zero."
+  },
+  {
+    "id": "la-03-006",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A pivot column in row echelon form corresponds to",
+    "options": [
+      "a free variable",
+      "a basic variable",
+      "an inconsistent row",
+      "a zero column always"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Pivot positions identify leading/basic variables.",
+    "common_mistake": "Non-pivot columns correspond to free variables."
+  },
+  {
+    "id": "la-03-007",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which operations are valid elementary row operations?",
+    "options": [
+      "Swap two rows",
+      "Multiply a row by a nonzero scalar",
+      "Add a multiple of one row to another",
+      "Square every entry in a row"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The first three are reversible linear row operations. Entrywise squaring is nonlinear.",
+    "common_mistake": "A row scale cannot use zero."
+  },
+  {
+    "id": "la-03-008",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "The null space of A contains",
+    "options": [
+      "solutions of Ax=0",
+      "columns of A only",
+      "solutions of Ax=b for every b",
+      "row vectors only"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Null(A) is defined as all domain vectors mapped to zero.",
+    "common_mistake": "Null vectors live in the domain."
+  },
+  {
+    "id": "la-03-009",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If Ax=b has one solution xp, then every solution is",
+    "options": [
+      "xp plus a null-space vector",
+      "only xp",
+      "a row-space vector",
+      "xp times b"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "If Ax=b and Axp=b, then A(x−xp)=0.",
+    "common_mistake": "The homogeneous component describes all freedom."
+  },
+  {
+    "id": "la-03-010",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Row rank and column rank of a matrix are",
+    "options": [
+      "always equal",
+      "equal only when square",
+      "unrelated",
+      "both equal nullity"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Both equal the matrix rank for every finite matrix.",
+    "common_mistake": "The row and column spaces themselves differ, but dimensions agree."
+  },
+  {
+    "id": "la-03-011",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A 4×7 matrix has rank 3. Enter its nullity.",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0
+    },
+    "solution_latex": "Nullity=7−3=4.",
+    "common_mistake": "Use the number of columns."
+  },
+  {
+    "id": "la-03-012",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A homogeneous system has 6 variables and 4 pivots. Enter its number of free variables.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "Free variables=6−4=2.",
+    "common_mistake": "Rows do not determine the count directly."
+  },
+  {
+    "id": "la-03-013",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter rank of [[1,2],[2,4]].",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "The second row is twice the first and the matrix is nonzero.",
+    "common_mistake": "Dependent rows reduce rank to one, not zero."
+  },
+  {
+    "id": "la-03-014",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter nullity of the 3×3 identity matrix.",
+    "correct": [],
+    "nat_answer": {
+      "value": 0,
+      "tolerance": 0
+    },
+    "solution_latex": "Identity has rank 3, so nullity is 0.",
+    "common_mistake": "Only the zero vector maps to zero."
+  },
+  {
+    "id": "la-03-015",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "The RREF of a 3×5 matrix has 2 pivots. Enter dimension of its row space.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "Row-space dimension equals rank, the pivot count.",
+    "common_mistake": "Nonzero RREF rows form a row-space basis."
+  },
+  {
+    "id": "la-03-016",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter the rank of a nonzero 4×4 matrix whose every row is a scalar multiple of the first.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "All rows span one nonzero direction.",
+    "common_mistake": "Nonzero prevents rank zero."
+  },
+  {
+    "id": "la-03-017",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A 3×4 matrix A has rank 3. Enter dimension of its left null space Null(Aᵀ).",
+    "correct": [],
+    "nat_answer": {
+      "value": 0,
+      "tolerance": 0
+    },
+    "solution_latex": "Aᵀ has 3 columns and rank 3, so its nullity is 0; equivalently m−rank=3−3.",
+    "common_mistake": "Left nullity uses number of rows of A."
+  },
+  {
+    "id": "la-03-018",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If rank(A)=rank([A|b])=2 and A has 5 columns, enter the number of free variables.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "The system is consistent and has 5−2=3 free variables.",
+    "common_mistake": "Equal ranks establish consistency; columns minus rank gives freedom."
+  },
+  {
+    "id": "la-03-019",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter rank of a 5×3 matrix with three linearly independent columns.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "Independent columns give column-space dimension 3.",
+    "common_mistake": "Rank cannot exceed the three columns."
+  },
+  {
+    "id": "la-03-020",
+    "subject": "linear-algebra",
+    "module": 3,
+    "topic": "Linear systems, elimination, rank & nullity",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A linear system in 4 unknowns has a unique solution. Enter nullity of its coefficient matrix.",
+    "correct": [],
+    "nat_answer": {
+      "value": 0,
+      "tolerance": 0
+    },
+    "solution_latex": "Uniqueness means the associated homogeneous system has only zero solution.",
+    "common_mistake": "Consistency alone would not force nullity zero."
+  }
+]

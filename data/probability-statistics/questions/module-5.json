@@ -1,0 +1,414 @@
+[
+  {
+    "id": "ps-05-001",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which statistic is most resistant to one extreme outlier?",
+    "options": [
+      "Mean",
+      "Median",
+      "Variance",
+      "Range"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The median depends on order, so one arbitrarily extreme value has limited influence.",
+    "common_mistake": "Robustness differs from efficiency under a normal model."
+  },
+  {
+    "id": "ps-05-002",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If 7 is added to every observation, the sample standard deviation",
+    "options": [
+      "increases by 7",
+      "decreases by 7",
+      "is unchanged",
+      "is multiplied by 49"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A common shift changes location but not deviations from the mean.",
+    "common_mistake": "Scaling, unlike shifting, changes standard deviation."
+  },
+  {
+    "id": "ps-05-003",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Correlation is always between",
+    "options": [
+      "0 and 1",
+      "−1 and 1",
+      "negative and positive infinity",
+      "−σXσY and σXσY"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Cauchy–Schwarz bounds correlation by −1 and 1.",
+    "common_mistake": "Covariance is unbounded; correlation is standardized."
+  },
+  {
+    "id": "ps-05-004",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If X,Y are independent with finite second moments, then",
+    "options": [
+      "Cov(X,Y)=0",
+      "X=Y",
+      "Corr(X,Y)=1",
+      "Var(X)=Var(Y)"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Independence makes E[XY]=E[X]E[Y], hence zero covariance.",
+    "common_mistake": "The converse is not generally true."
+  },
+  {
+    "id": "ps-05-005",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For data 1,2,2,8, the mode is",
+    "options": [
+      "1",
+      "2",
+      "3.25",
+      "8"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The most frequent observed value is 2.",
+    "common_mistake": "Mode is not mean or midpoint."
+  },
+  {
+    "id": "ps-05-006",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which identity is the law of total expectation?",
+    "options": [
+      "E[X]=E[E[X|Y]]",
+      "E[X]=Var(E[X|Y])",
+      "E[X]=E[Var(X|Y)]",
+      "E[X|Y]=E[X] always"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Averaging the conditional expectation over Y recovers the unconditional mean.",
+    "common_mistake": "The conditional expectation is itself a random variable in Y."
+  },
+  {
+    "id": "ps-05-007",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which transformations preserve correlation?",
+    "options": [
+      "X→2X+1",
+      "Y→5Y−3",
+      "X→−X",
+      "Y→Y+100"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Positive rescaling and shifts preserve correlation. Negating one variable reverses its sign.",
+    "common_mistake": "A negative scale changes correlation sign."
+  },
+  {
+    "id": "ps-05-008",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If Corr(X,Y)=0, which conclusion is always justified when SDs are positive?",
+    "options": [
+      "X,Y are independent",
+      "Cov(X,Y)=0",
+      "Y is constant",
+      "E[XY]=0"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Zero correlation directly means zero covariance when defined.",
+    "common_mistake": "Independence needs stronger assumptions."
+  },
+  {
+    "id": "ps-05-009",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "The usual unbiased sample variance uses denominator",
+    "options": [
+      "n",
+      "n−1",
+      "n+1",
+      "√n"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Bessel-corrected sample variance divides by n−1.",
+    "common_mistake": "Population variance and likelihood conventions may use n."
+  },
+  {
+    "id": "ps-05-010",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "The law of total variance is",
+    "options": [
+      "Var(X)=E[Var(X|Y)]+Var(E[X|Y])",
+      "Var(X)=E[Var(X|Y)]",
+      "Var(X)=Var(X|Y)+Var(Y)",
+      "Var(X)=E[X²]+E[X]²"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Total variance adds average within-group variance and variance between conditional means.",
+    "common_mistake": "Do not drop the between-group term."
+  },
+  {
+    "id": "ps-05-011",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter the mean of 2,4,6,8.",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "Their sum is 20 across four values, so the mean is 5.",
+    "common_mistake": "Divide by the observation count."
+  },
+  {
+    "id": "ps-05-012",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter the population variance of 1,3,5.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2.6666667,
+      "tolerance": 0.001
+    },
+    "solution_latex": "Mean is 3; squared deviations sum to 8, so population variance is 8/3.",
+    "common_mistake": "Population variance divides by 3, not 2."
+  },
+  {
+    "id": "ps-05-013",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Five values have mean 12. A sixth value 18 is added. Enter the new mean.",
+    "correct": [],
+    "nat_answer": {
+      "value": 13,
+      "tolerance": 0
+    },
+    "solution_latex": "Old sum is 60; new sum is 78, and 78/6=13.",
+    "common_mistake": "Recover the total before updating."
+  },
+  {
+    "id": "ps-05-014",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If E[X]=3 and E[X²]=14, enter Var(X).",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "Var(X)=14−3²=5.",
+    "common_mistake": "Subtract the square of the mean."
+  },
+  {
+    "id": "ps-05-015",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If Cov(X,Y)=6, σX=2, and σY=3, enter Corr(X,Y).",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "Correlation is 6/(2·3)=1.",
+    "common_mistake": "Divide by the product of SDs."
+  },
+  {
+    "id": "ps-05-016",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If Var(X)=4, enter Var(3X−7).",
+    "correct": [],
+    "nat_answer": {
+      "value": 36,
+      "tolerance": 0
+    },
+    "solution_latex": "Variance scales by 3², giving 9·4=36.",
+    "common_mistake": "The shift does not affect variance."
+  },
+  {
+    "id": "ps-05-017",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Given E[X]=2,E[Y]=5,E[XY]=13, enter Cov(X,Y).",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "Covariance is 13−2·5=3.",
+    "common_mistake": "Subtract the product of means."
+  },
+  {
+    "id": "ps-05-018",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If E[Var(X|Y)]=4 and Var(E[X|Y])=7, enter Var(X).",
+    "correct": [],
+    "nat_answer": {
+      "value": 11,
+      "tolerance": 0
+    },
+    "solution_latex": "The law of total variance gives 4+7=11.",
+    "common_mistake": "Both within- and between-group parts matter."
+  },
+  {
+    "id": "ps-05-019",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "For sorted data 1,2,3,4,100, enter the median.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "With five values, the third ordered value is the median.",
+    "common_mistake": "An outlier affects mean more than median."
+  },
+  {
+    "id": "ps-05-020",
+    "subject": "probability-statistics",
+    "module": 5,
+    "topic": "Descriptive statistics & moments",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If Corr(X,Y)=−0.8, enter Corr(2X+1,−3Y+4).",
+    "correct": [],
+    "nat_answer": {
+      "value": 0.8,
+      "tolerance": 0.001
+    },
+    "solution_latex": "One negative scale reverses the sign; shifts do nothing.",
+    "common_mistake": "Track the signs of scale factors."
+  }
+]

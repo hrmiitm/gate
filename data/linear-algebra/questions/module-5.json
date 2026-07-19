@@ -1,0 +1,414 @@
+[
+  {
+    "id": "la-05-001",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "An eigenvector must be",
+    "options": [
+      "nonzero",
+      "unit length",
+      "orthogonal to all others",
+      "unique"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The zero vector satisfies Av=λv for every λ and is excluded to keep the concept meaningful.",
+    "common_mistake": "Normalization is optional."
+  },
+  {
+    "id": "la-05-002",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Eigenvalues of a triangular matrix are",
+    "options": [
+      "row sums",
+      "diagonal entries",
+      "singular values",
+      "column norms"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The characteristic determinant of a triangular matrix is the product of diagonal shifts.",
+    "common_mistake": "Off-diagonal entries can affect eigenvectors but not eigenvalues."
+  },
+  {
+    "id": "la-05-003",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For a real symmetric matrix, eigenvalues are",
+    "options": [
+      "always complex nonreal",
+      "real",
+      "always positive",
+      "all equal"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The spectral theorem guarantees real eigenvalues.",
+    "common_mistake": "Symmetry does not imply positive definiteness."
+  },
+  {
+    "id": "la-05-004",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Eigenvectors for distinct eigenvalues of a real symmetric matrix are",
+    "options": [
+      "parallel",
+      "orthogonal",
+      "zero",
+      "identical"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Symmetry makes eigenspaces for distinct eigenvalues orthogonal.",
+    "common_mistake": "This orthogonality need not hold for nonsymmetric matrices."
+  },
+  {
+    "id": "la-05-005",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A matrix is diagonalizable when it has",
+    "options": [
+      "nonzero determinant only",
+      "enough linearly independent eigenvectors",
+      "distinct entries",
+      "zero trace"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "An n×n matrix needs n independent eigenvectors to form the diagonalizing basis.",
+    "common_mistake": "Invertibility and diagonalizability are different."
+  },
+  {
+    "id": "la-05-006",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Trace equals",
+    "options": [
+      "product of eigenvalues",
+      "sum of eigenvalues with multiplicity",
+      "largest eigenvalue",
+      "rank always"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The characteristic polynomial coefficients give trace as eigenvalue sum.",
+    "common_mistake": "Determinant is the eigenvalue product."
+  },
+  {
+    "id": "la-05-007",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For A=PDP inverse, which are true?",
+    "options": [
+      "A and D have the same eigenvalues",
+      "Aᵏ=PDᵏP inverse",
+      "Columns of P are eigenvectors",
+      "D must equal identity"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Similarity preserves spectrum, P collects an eigenbasis, and powers act on D.",
+    "common_mistake": "D stores eigenvalues and need not be identity."
+  },
+  {
+    "id": "la-05-008",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A repeated eigenvalue guarantees diagonalizability",
+    "options": [
+      "always",
+      "never",
+      "only if geometric multiplicity reaches algebraic multiplicity",
+      "only if determinant is zero"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Every eigenvalue must supply enough independent eigenvectors.",
+    "common_mistake": "Repetition alone does not decide diagonalizability."
+  },
+  {
+    "id": "la-05-009",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If Av=λv, then A²v equals",
+    "options": [
+      "λv",
+      "2λv",
+      "λ²v",
+      "0 always"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A²v=A(λv)=λAv=λ²v.",
+    "common_mistake": "The power applies to the eigenvalue."
+  },
+  {
+    "id": "la-05-010",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Zero is an eigenvalue exactly when A is",
+    "options": [
+      "orthogonal",
+      "singular",
+      "symmetric",
+      "diagonal"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Av=0 has a nonzero solution exactly when A is singular.",
+    "common_mistake": "A symmetric matrix can be invertible."
+  },
+  {
+    "id": "la-05-011",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter eigenvalue sum of a matrix with trace 9.",
+    "correct": [],
+    "nat_answer": {
+      "value": 9,
+      "tolerance": 0
+    },
+    "solution_latex": "Eigenvalues sum to trace, counting algebraic multiplicity.",
+    "common_mistake": "No diagonalization is needed."
+  },
+  {
+    "id": "la-05-012",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A 3×3 matrix has eigenvalues 1,2,4. Enter its determinant.",
+    "correct": [],
+    "nat_answer": {
+      "value": 8,
+      "tolerance": 0
+    },
+    "solution_latex": "The product is 1·2·4=8.",
+    "common_mistake": "Determinant uses product, not sum."
+  },
+  {
+    "id": "la-05-013",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter the largest eigenvalue of diag(−2,5,3).",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "Diagonal entries are the eigenvalues.",
+    "common_mistake": "Largest means algebraically largest here."
+  },
+  {
+    "id": "la-05-014",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If Av=3v, enter the eigenvalue of A⁵ for the same v.",
+    "correct": [],
+    "nat_answer": {
+      "value": 243,
+      "tolerance": 0
+    },
+    "solution_latex": "A⁵v=3⁵v=243v.",
+    "common_mistake": "Raise the eigenvalue to the power."
+  },
+  {
+    "id": "la-05-015",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A 2×2 matrix has trace 7 and one eigenvalue 2. Enter the other.",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "The eigenvalues sum to 7, so the other is 5.",
+    "common_mistake": "Trace counts multiplicity."
+  },
+  {
+    "id": "la-05-016",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A 2×2 matrix has determinant 12 and one eigenvalue 3. Enter the other.",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0
+    },
+    "solution_latex": "Eigenvalue product is 12, so the other is 4.",
+    "common_mistake": "Use determinant for product."
+  },
+  {
+    "id": "la-05-017",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter the geometric multiplicity of eigenvalue 1 for [[1,1],[0,1]].",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "A−I has rank 1, so its null space is one-dimensional.",
+    "common_mistake": "Algebraic multiplicity is 2 but geometric multiplicity is 1."
+  },
+  {
+    "id": "la-05-018",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A real symmetric 4×4 matrix has four distinct eigenvalues. Enter the maximum size of an orthonormal eigenbasis.",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0
+    },
+    "solution_latex": "The spectral theorem supplies four orthonormal eigenvectors.",
+    "common_mistake": "Distinctness already gives independent vectors; symmetry gives orthogonality."
+  },
+  {
+    "id": "la-05-019",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If eigenvalues of A are 2 and −1, enter trace(A³).",
+    "correct": [],
+    "nat_answer": {
+      "value": 7,
+      "tolerance": 0
+    },
+    "solution_latex": "Eigenvalues of A³ are 8 and −1, so trace is 7.",
+    "common_mistake": "Cube eigenvalues before summing."
+  },
+  {
+    "id": "la-05-020",
+    "subject": "linear-algebra",
+    "module": 5,
+    "topic": "Eigenvalues, eigenvectors & diagonalization",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter the spectral radius of diag(−6,2,5).",
+    "correct": [],
+    "nat_answer": {
+      "value": 6,
+      "tolerance": 0
+    },
+    "solution_latex": "Spectral radius is maximum absolute eigenvalue: max(6,2,5)=6.",
+    "common_mistake": "Use absolute magnitude, not largest signed value."
+  }
+]

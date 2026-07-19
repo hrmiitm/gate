@@ -1,0 +1,414 @@
+[
+  {
+    "id": "ps-01-001",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "How many three-letter strings with distinct letters can be formed from five distinct letters?",
+    "options": [
+      "10",
+      "20",
+      "60",
+      "125"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Order matters and repetition is forbidden, so ${}^5P_3=5\\cdot4\\cdot3=60$.",
+    "common_mistake": "Using ${5\\choose3}$ ignores the order of the letters."
+  },
+  {
+    "id": "ps-01-002",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Two fair dice are rolled. What is $P(\\text{sum}=7)$?",
+    "options": [
+      "$1/12$",
+      "$1/6$",
+      "$5/36$",
+      "$7/36$"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The six ordered pairs $(1,6),\\ldots,(6,1)$ work out of 36 equally likely pairs, giving $6/36=1/6$.",
+    "common_mistake": "Treating unordered pairs as equally likely changes the sample space."
+  },
+  {
+    "id": "ps-01-003",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If $A$ and $B$ are mutually exclusive with $P(A)=0.3$ and $P(B)=0.4$, then $P(A\\cup B)$ is",
+    "options": [
+      "$0.12$",
+      "$0.58$",
+      "$0.7$",
+      "$1$"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Mutual exclusivity gives $P(A\\cap B)=0$, so $P(A\\cup B)=0.3+0.4=0.7$.",
+    "common_mistake": "Multiplying applies to independent intersections, not disjoint unions."
+  },
+  {
+    "id": "ps-01-004",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which set must be an event in every probability model?",
+    "options": [
+      "Only the sample space",
+      "Only the empty set",
+      "Both the empty set and sample space",
+      "Every subset, even for an arbitrary sigma-algebra"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Every sigma-algebra contains $\\varnothing$ and $\\Omega$. It need not contain every subset when $\\Omega$ is uncountable.",
+    "common_mistake": "A sample space does not force the power set to be the event collection."
+  },
+  {
+    "id": "ps-01-005",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For any event $A$ with $P(A)=0.27$, $P(A^c)$ equals",
+    "options": [
+      "$0.27$",
+      "$0.63$",
+      "$0.73$",
+      "$1.27$"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "$P(A^c)=1-P(A)=0.73$.",
+    "common_mistake": "The complement is subtracted from one, not from the sample size."
+  },
+  {
+    "id": "ps-01-006",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Ten people form a committee of three. How many committees are possible?",
+    "options": [
+      "30",
+      "120",
+      "720",
+      "1000"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Membership has no roles, so use ${10\\choose3}=120$.",
+    "common_mistake": "A committee is unordered; permutations overcount each committee by $3!$."
+  },
+  {
+    "id": "ps-01-007",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which statements are always true for events $A,B$?",
+    "options": [
+      "$P(A\\cap B)\\le P(A)$",
+      "$P(A\\cup B)\\ge P(A)$",
+      "$P(A\\cup B)=P(A)+P(B)$",
+      "$P(A^c)=1-P(A)$"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Intersection is contained in $A$, union contains $A$, and complementation gives the last identity. Additivity without subtraction requires disjointness.",
+    "common_mistake": "Do not use the disjoint-union formula without the disjointness condition."
+  },
+  {
+    "id": "ps-01-008",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If independent events $A,B$ satisfy $P(A)=1/2$ and $P(A\\cup B)=3/4$, then $P(B)$ is",
+    "options": [
+      "$1/4$",
+      "$1/3$",
+      "$1/2$",
+      "$3/4$"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "$3/4=1/2+p-(1/2)p=1/2+p/2$, so $p=1/2$.",
+    "common_mistake": "Independence determines the intersection, not the union directly."
+  },
+  {
+    "id": "ps-01-009",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Which pair of events from one fair die roll is independent?",
+    "options": [
+      "$A=\\{1\\},B=\\{2\\}$",
+      "$A=\\{1,2,3\\},B=\\{1,4\\}$",
+      "$A=\\{1,2\\},B=\\{1,2,3\\}$",
+      "$A=\\{1,2,3\\},B=A^c$"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "$P(A)=1/2$, $P(B)=1/3$, and $P(A\\cap B)=P(\\{1\\})=1/6=P(A)P(B)$, so the second pair is independent.",
+    "common_mistake": "Always verify the product rule exactly."
+  },
+  {
+    "id": "ps-01-010",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A password has two distinct letters followed by two distinct digits. Reuse is forbidden within each group. The count is",
+    "options": [
+      "$26^2\\cdot10^2$",
+      "$26\\cdot25\\cdot10\\cdot9$",
+      "${26\\choose2}{10\\choose2}$",
+      "$36\\cdot35\\cdot34\\cdot33$"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Positions are ordered: $26P2\\times10P2=26\\cdot25\\cdot10\\cdot9$.",
+    "common_mistake": "Choosing unordered letter/digit sets loses positional order."
+  },
+  {
+    "id": "ps-01-011",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "How many binary strings of length 8 contain exactly three ones?",
+    "correct": [],
+    "nat_answer": {
+      "value": 56,
+      "tolerance": 0
+    },
+    "solution_latex": "${8\\choose3}=56$: choose the three positions occupied by ones.",
+    "common_mistake": "Do not arrange the chosen ones again; they are identical."
+  },
+  {
+    "id": "ps-01-012",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "How many nonnegative integer solutions satisfy $x+y+z=10$?",
+    "correct": [],
+    "nat_answer": {
+      "value": 66,
+      "tolerance": 0
+    },
+    "solution_latex": "Stars and bars gives ${12\\choose2}=66$.",
+    "common_mistake": "Nonnegative solutions use $n+k-1$ positions; positive solutions use a shifted total."
+  },
+  {
+    "id": "ps-01-013",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "How many positive integer solutions satisfy $x_1+x_2+x_3+x_4=10$?",
+    "correct": [],
+    "nat_answer": {
+      "value": 84,
+      "tolerance": 0
+    },
+    "solution_latex": "Set $y_i=x_i-1\\ge0$. Then $\\sum y_i=6$, giving ${9\\choose3}=84$.",
+    "common_mistake": "Account for the mandatory one in every variable before applying stars and bars."
+  },
+  {
+    "id": "ps-01-014",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "From 7 men and 5 women, how many 4-person committees contain exactly 2 women?",
+    "correct": [],
+    "nat_answer": {
+      "value": 210,
+      "tolerance": 0
+    },
+    "solution_latex": "Choose independently: ${5\\choose2}{7\\choose2}=10\\cdot21=210$.",
+    "common_mistake": "The order of committee members is irrelevant."
+  },
+  {
+    "id": "ps-01-015",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A fair coin is tossed 5 times. Enter $32P(\\text{at least one head})$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 31,
+      "tolerance": 0
+    },
+    "solution_latex": "$P(\\text{no heads})=1/32$, so the requested scaled probability is $32(31/32)=31$.",
+    "common_mistake": "“At least one” is fastest through its complement."
+  },
+  {
+    "id": "ps-01-016",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Events $A,B$ have $P(A)=0.6$, $P(B)=0.5$, and $P(A\\cup B)=0.8$. Enter $10P(A\\cap B)$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "Inclusion–exclusion gives $P(A\\cap B)=0.6+0.5-0.8=0.3$; scaling gives 3.",
+    "common_mistake": "Subtract the union; do not assume independence."
+  },
+  {
+    "id": "ps-01-017",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A box contains 4 red, 3 blue, and 2 green balls. Two are drawn without replacement. How many unordered pairs have different colors?",
+    "correct": [],
+    "nat_answer": {
+      "value": 26,
+      "tolerance": 0
+    },
+    "solution_latex": "Count cross-color pairs: $4\\cdot3+4\\cdot2+3\\cdot2=12+8+6=26$.",
+    "common_mistake": "Within a cross-color pair there is no extra factor of two."
+  },
+  {
+    "id": "ps-01-018",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "How many onto functions exist from a 3-element set to a 2-element set?",
+    "correct": [],
+    "nat_answer": {
+      "value": 6,
+      "tolerance": 0
+    },
+    "solution_latex": "There are $2^3=8$ functions; exclude the two constant functions, leaving 6.",
+    "common_mistake": "Onto excludes functions that miss either codomain element."
+  },
+  {
+    "id": "ps-01-019",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A fair die is rolled twice. Enter $36P(\\text{the second result exceeds the first})$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 15,
+      "tolerance": 0
+    },
+    "solution_latex": "There are ${6\\choose2}=15$ ordered increasing pairs among 36 outcomes.",
+    "common_mistake": "The six ties prevent a simple one-half of all 36 outcomes."
+  },
+  {
+    "id": "ps-01-020",
+    "subject": "probability-statistics",
+    "module": 1,
+    "topic": "Counting & probability foundations",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "In a class of 30, 18 know Python, 14 know SQL, and 5 know neither. How many know both?",
+    "correct": [],
+    "nat_answer": {
+      "value": 7,
+      "tolerance": 0
+    },
+    "solution_latex": "$|P\\cup S|=25$, so $|P\\cap S|=18+14-25=7$.",
+    "common_mistake": "Convert “neither” into the union size first."
+  }
+]

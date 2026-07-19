@@ -1,0 +1,414 @@
+[
+  {
+    "id": "ps-06-001",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For iid observations with variance σ², Var(sample mean) is",
+    "options": [
+      "σ²",
+      "σ²/n",
+      "σ/n",
+      "nσ²"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Variance of the average is nσ²/n²=σ²/n.",
+    "common_mistake": "Standard error is σ/√n; variance is its square."
+  },
+  {
+    "id": "ps-06-002",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The Central Limit Theorem primarily says that",
+    "options": [
+      "raw observations become normal",
+      "a standardized sum tends toward normality",
+      "every sample mean equals μ",
+      "variance becomes zero at finite n"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Under suitable conditions, the centered and scaled sum converges in distribution to standard normal.",
+    "common_mistake": "The population distribution itself does not change."
+  },
+  {
+    "id": "ps-06-003",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If sample size is multiplied by 4, standard error is",
+    "options": [
+      "multiplied by 4",
+      "multiplied by 2",
+      "halved",
+      "quartered"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Standard error is proportional to 1/√n.",
+    "common_mistake": "It follows a square-root law."
+  },
+  {
+    "id": "ps-06-004",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The law of large numbers concerns",
+    "options": [
+      "convergence of sample mean to μ",
+      "exact normality of every sum",
+      "the t distribution only",
+      "maximum values"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The sample average stabilizes near the population mean as n grows.",
+    "common_mistake": "LLN is about convergence, not fluctuation shape."
+  },
+  {
+    "id": "ps-06-005",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For iid Xi with variance 9, Var(sum of 10 Xi) is",
+    "options": [
+      "0.9",
+      "9",
+      "30",
+      "90"
+    ],
+    "correct": [
+      "D"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Independence makes variances add: 10·9=90.",
+    "common_mistake": "Do not divide by n for a sum."
+  },
+  {
+    "id": "ps-06-006",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which condition is central to the classical iid CLT?",
+    "options": [
+      "Finite variance",
+      "Normal population",
+      "n exactly above 30",
+      "Zero mean"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Finite variance supports the classical CLT; normal raw data and zero mean are unnecessary.",
+    "common_mistake": "Thirty is a heuristic, not a theorem condition."
+  },
+  {
+    "id": "ps-06-007",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For iid data with finite variance, which are true?",
+    "options": [
+      "E[sample mean]=μ",
+      "Var(sample mean)=σ²/n",
+      "sample mean is exactly normal for every population and n",
+      "standard error decreases with n"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The first two follow directly and standard error shrinks. Exact finite-n normality is not universal.",
+    "common_mistake": "CLT normality is generally approximate."
+  },
+  {
+    "id": "ps-06-008",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If the original population is normal, the sample mean is",
+    "options": [
+      "exactly normal for every n",
+      "normal only for n≥30",
+      "uniform",
+      "chi-square"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Linear combinations of independent normals are exactly normal.",
+    "common_mistake": "No large-sample approximation is needed."
+  },
+  {
+    "id": "ps-06-009",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A continuity correction is used when approximating",
+    "options": [
+      "a discrete count by a continuous normal",
+      "normal by t",
+      "mean by variance",
+      "exponential by uniform"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A 0.5 boundary shift aligns discrete bars with continuous area.",
+    "common_mistake": "It addresses discrete-to-continuous boundaries."
+  },
+  {
+    "id": "ps-06-010",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Consistency informally means an estimator",
+    "options": [
+      "is always unbiased",
+      "gets close to the target as n grows",
+      "has variance growing with n",
+      "equals every sample value"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A consistent estimator concentrates around the true value.",
+    "common_mistake": "Consistency is asymptotic and distinct from unbiasedness."
+  },
+  {
+    "id": "ps-06-011",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Population SD is 15 and n=25. Enter standard error of the mean.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "SE=15/√25=3.",
+    "common_mistake": "Use square root of sample size."
+  },
+  {
+    "id": "ps-06-012",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "iid variables have mean 4 and variance 9. For n=20, enter E[sum Xi].",
+    "correct": [],
+    "nat_answer": {
+      "value": 80,
+      "tolerance": 0
+    },
+    "solution_latex": "Expectation of the sum is 20·4=80.",
+    "common_mistake": "Means add linearly."
+  },
+  {
+    "id": "ps-06-013",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For the same variables and n=20, enter Var(sum Xi).",
+    "correct": [],
+    "nat_answer": {
+      "value": 180,
+      "tolerance": 0
+    },
+    "solution_latex": "Independence gives 20·9=180.",
+    "common_mistake": "Sum variance multiplies by n."
+  },
+  {
+    "id": "ps-06-014",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Population variance is 16 and n=64. Enter Var(sample mean).",
+    "correct": [],
+    "nat_answer": {
+      "value": 0.25,
+      "tolerance": 0.001
+    },
+    "solution_latex": "Variance of the mean is 16/64=0.25.",
+    "common_mistake": "This asks variance, not standard error."
+  },
+  {
+    "id": "ps-06-015",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "The standardized mean is (sample mean−50)/(10/√100). If sample mean=52, enter z.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "The standard error is 1, so z=2.",
+    "common_mistake": "Use sampling SD, not population SD alone."
+  },
+  {
+    "id": "ps-06-016",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "To reduce a standard error from 4 to 2, by what factor must n increase?",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0
+    },
+    "solution_latex": "Halving error requires quadrupling n.",
+    "common_mistake": "Precision follows a square-root law."
+  },
+  {
+    "id": "ps-06-017",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "For iid Bernoulli(0.3) data, enter E[sample mean].",
+    "correct": [],
+    "nat_answer": {
+      "value": 0.3,
+      "tolerance": 0.001
+    },
+    "solution_latex": "The sample proportion is unbiased for p, so its mean is 0.3.",
+    "common_mistake": "Averaging does not change expectation."
+  },
+  {
+    "id": "ps-06-018",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "For n=100 Bernoulli(0.3) data, enter 1000Var(sample mean).",
+    "correct": [],
+    "nat_answer": {
+      "value": 2.1,
+      "tolerance": 0.001
+    },
+    "solution_latex": "Variance is 0.3·0.7/100=0.0021; scaling gives 2.1.",
+    "common_mistake": "Use p(1−p)/n."
+  },
+  {
+    "id": "ps-06-019",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A sum has variance 1600. Enter its standard deviation.",
+    "correct": [],
+    "nat_answer": {
+      "value": 40,
+      "tolerance": 0
+    },
+    "solution_latex": "Standard deviation is √1600=40.",
+    "common_mistake": "Take the square root of variance."
+  },
+  {
+    "id": "ps-06-020",
+    "subject": "probability-statistics",
+    "module": 6,
+    "topic": "Central Limit Theorem & sampling distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If Z=(sample mean−μ)/(σ/√n) and sample mean=μ, enter Z.",
+    "correct": [],
+    "nat_answer": {
+      "value": 0,
+      "tolerance": 0
+    },
+    "solution_latex": "The numerator is zero.",
+    "common_mistake": "Centering maps the mean to z=0."
+  }
+]

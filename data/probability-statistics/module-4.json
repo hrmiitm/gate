@@ -1,0 +1,56 @@
+{
+  "subject": "probability-statistics",
+  "subjectTitle": "Probability & Statistics",
+  "module": 4,
+  "title": "Continuous distributions & CDFs",
+  "searchTerms": [
+    "pdf",
+    "cdf",
+    "uniform",
+    "exponential",
+    "normal",
+    "t distribution",
+    "chi square"
+  ],
+  "introduction": "For a continuous variable, probability is area—not height. The CDF unifies discrete and continuous cases and often turns a difficult density question into endpoint arithmetic.",
+  "theory": [
+    "A density may exceed one; only its integral must equal one. Single points carry zero probability for continuous variables.",
+    "The exponential distribution is memoryless. Normal standardization converts any normal probability into an area under the standard normal curve; t and chi-square distributions appear when estimating from normal samples."
+  ],
+  "formulas": [
+    "F_X(x)=P(X\\le x),\\qquad f_X(x)=F_X'(x)",
+    "P(a<X\\le b)=F_X(b)-F_X(a)",
+    "f(x)=\\lambda e^{-\\lambda x},\\ x\\ge0",
+    "P(X>s+t\\mid X>s)=P(X>t)",
+    "Z=\\frac{X-\\mu}{\\sigma}"
+  ],
+  "examples": [
+    {
+      "title": "Normalize a density",
+      "problem": "$f(x)=cx$ on $0<x<2$.",
+      "solution": "$\\int_0^2cx,dx=2c=1$, so $c=1/2$."
+    },
+    {
+      "title": "CDF from density",
+      "problem": "For that density, find $F(1)$.",
+      "solution": "$F(1)=\\int_0^1x/2,dx=1/4$."
+    },
+    {
+      "title": "Memorylessness",
+      "problem": "$X\\sim Exp(\\lambda)$ and $P(X>5)=.3$. Find $P(X>10\\mid X>5)$.",
+      "solution": "The remaining wait has the original distribution, so the answer is $P(X>5)=.3$."
+    },
+    {
+      "title": "Standardize",
+      "problem": "$X\\sim N(10,4)$. Find $P(X\\le12)$.",
+      "solution": "$Z=(12-10)/2=1$, hence $P(X\\le12)=\\Phi(1)\\approx.8413$."
+    }
+  ],
+  "pitfalls": [
+    "Reading a density value as a probability.",
+    "Using variance instead of standard deviation when standardizing.",
+    "Applying memorylessness to non-exponential continuous distributions.",
+    "Ignoring endpoints for mixed/discrete distributions when reading a CDF."
+  ],
+  "whyGate": "CDF manipulation and standardization support inference, probabilistic ML, reliability, and sampling-distribution questions."
+}

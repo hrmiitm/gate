@@ -1,0 +1,54 @@
+{
+  "subject": "linear-algebra",
+  "subjectTitle": "Linear Algebra",
+  "module": 1,
+  "title": "Vector spaces, basis & dimension",
+  "searchTerms": [
+    "vector space",
+    "subspace",
+    "span",
+    "independence",
+    "basis",
+    "dimension"
+  ],
+  "introduction": "A vector space is a set where linear combinations stay legal. Most exam questions collapse once you ask two disciplined questions: what spans the set, and are those spanning vectors independent?",
+  "theory": [
+    "For a subset of a known vector space, the zero vector plus closure under linear combinations is the efficient subspace test. Homogeneous linear constraints produce subspaces; nonzero offsets usually do not.",
+    "A basis is simultaneously spanning and linearly independent. Every basis of a finite-dimensional space has the same size, called the dimension."
+  ],
+  "formulas": [
+    "\\operatorname{span}\\{v_1,\\ldots,v_k\\}=\\left\\{\\sum_i\\alpha_iv_i\\right\\}",
+    "\\sum_i\\alpha_iv_i=0\\Rightarrow\\alpha_i=0\\ \\forall i\\quad\\text{(independence)}",
+    "\\dim(U+W)=\\dim U+\\dim W-\\dim(U\\cap W)",
+    "\\dim\\mathbb R^n=n"
+  ],
+  "examples": [
+    {
+      "title": "Subspace test",
+      "problem": "$S={(x,y,z):x+y-z=0}$.",
+      "solution": "It is the null space of $[1 1 -1]$, hence contains zero and is closed under linear combinations."
+    },
+    {
+      "title": "Dependence",
+      "problem": "$v_3=2v_1-v_2$.",
+      "solution": "$2v_1-v_2-v_3=0$ is a nontrivial relation, so the set is dependent."
+    },
+    {
+      "title": "Build a basis",
+      "problem": "Solve $x+y-z=0$.",
+      "solution": "Write $(x,y,z)=x(1,0,1)+y(0,1,1)$; these two vectors are independent, so they form a basis."
+    },
+    {
+      "title": "Dimension formula",
+      "problem": "$\\dim U=3,\\dim W=4,\\dim(U+W)=5$.",
+      "solution": "$\\dim(U\\cap W)=3+4-5=2$."
+    }
+  ],
+  "pitfalls": [
+    "Checking closure under addition but forgetting scalar multiplication.",
+    "Calling a spanning set a basis without checking independence.",
+    "Treating an affine plane not through the origin as a subspace.",
+    "Assuming more vectors always means a larger span."
+  ],
+  "whyGate": "Subspaces and dimension reappear as column spaces, null spaces, eigenspaces, projections, PCA subspaces, and model identifiability."
+}

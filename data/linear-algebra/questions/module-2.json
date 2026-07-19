@@ -1,0 +1,414 @@
+[
+  {
+    "id": "la-02-001",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If Q is orthogonal, then Q inverse equals",
+    "options": [
+      "Q",
+      "Q transpose",
+      "−Q",
+      "det(Q)"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "QᵀQ=I, so Qᵀ is the inverse.",
+    "common_mistake": "Q need not be symmetric."
+  },
+  {
+    "id": "la-02-002",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "An idempotent matrix P satisfies",
+    "options": [
+      "P²=I",
+      "P²=P",
+      "PᵀP=I",
+      "P=0 only"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Idempotence is exactly P²=P.",
+    "common_mistake": "Involution P²=I is a different property."
+  },
+  {
+    "id": "la-02-003",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Eigenvalues of an idempotent matrix belong to",
+    "options": [
+      "{−1,1}",
+      "{0,1}",
+      "positive reals only",
+      "complex unit circle"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "P²v=Pv gives λ²=λ, hence λ is 0 or 1.",
+    "common_mistake": "Idempotent does not imply invertible."
+  },
+  {
+    "id": "la-02-004",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A real orthogonal matrix preserves",
+    "options": [
+      "only determinant",
+      "Euclidean lengths and inner products",
+      "every coordinate",
+      "trace"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "(Qx)ᵀ(Qy)=xᵀQᵀQy=xᵀy.",
+    "common_mistake": "Rotation can change coordinates while preserving geometry."
+  },
+  {
+    "id": "la-02-005",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "An orthogonal projection matrix is",
+    "options": [
+      "symmetric and idempotent",
+      "skew-symmetric",
+      "always invertible",
+      "always rank zero"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Orthogonal projections satisfy Pᵀ=P and P²=P.",
+    "common_mistake": "An oblique projection may be idempotent without symmetry."
+  },
+  {
+    "id": "la-02-006",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The determinant of a real orthogonal matrix is",
+    "options": [
+      "0",
+      "1 only",
+      "−1 or 1",
+      "any positive value"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "det(QᵀQ)=det(Q)²=1.",
+    "common_mistake": "Reflections have determinant −1."
+  },
+  {
+    "id": "la-02-007",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which statements hold for an orthogonal projection P?",
+    "options": [
+      "P²=P",
+      "Pᵀ=P",
+      "I−P is an orthogonal projection",
+      "Every eigenvalue equals 1"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "P and I−P project onto complementary orthogonal subspaces. P can have both 0 and 1 eigenvalues.",
+    "common_mistake": "Projection rank need not equal full dimension."
+  },
+  {
+    "id": "la-02-008",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If P projects onto a k-dimensional subspace, trace(P) equals",
+    "options": [
+      "0",
+      "1",
+      "k",
+      "ambient dimension always"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The spectrum contains k ones and remaining zeros, so trace is k.",
+    "common_mistake": "Trace equals rank for a projection."
+  },
+  {
+    "id": "la-02-009",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For nonzero vector a, projection onto span(a) is",
+    "options": [
+      "aaᵀ",
+      "aaᵀ/(aᵀa)",
+      "aᵀa",
+      "I−aaᵀ always"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Normalization by aᵀa makes the map idempotent and fixes a.",
+    "common_mistake": "aaᵀ works only when a is unit length."
+  },
+  {
+    "id": "la-02-010",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Which matrix is necessarily symmetric?",
+    "options": [
+      "A+Aᵀ",
+      "A−Aᵀ",
+      "AB",
+      "A inverse"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "(A+Aᵀ)ᵀ=A+Aᵀ.",
+    "common_mistake": "A−Aᵀ is skew-symmetric."
+  },
+  {
+    "id": "la-02-011",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter det(Q)² for any real orthogonal square matrix Q.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "From QᵀQ=I, determinants give det(Q)²=1.",
+    "common_mistake": "The determinant itself can be −1."
+  },
+  {
+    "id": "la-02-012",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "P is a 5×5 projection of rank 2. Enter trace(P).",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "A projection has rank-many eigenvalues 1, so trace equals rank.",
+    "common_mistake": "Count both zero and one eigenvalues correctly."
+  },
+  {
+    "id": "la-02-013",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For P=[[1,0],[0,0]], enter the squared norm of P(3,4)ᵀ.",
+    "correct": [],
+    "nat_answer": {
+      "value": 9,
+      "tolerance": 0.01
+    },
+    "solution_latex": "P(3,4)=(3,0), whose squared norm is 9.",
+    "common_mistake": "Projection discards the orthogonal component."
+  },
+  {
+    "id": "la-02-014",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If Q is orthogonal and x has norm 7, enter norm(Qx).",
+    "correct": [],
+    "nat_answer": {
+      "value": 7,
+      "tolerance": 0
+    },
+    "solution_latex": "Orthogonal maps preserve Euclidean norm.",
+    "common_mistake": "They do not scale length by determinant."
+  },
+  {
+    "id": "la-02-015",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter rank of the 3×3 all-ones matrix.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "Every row is the same nonzero row, so the row space is one-dimensional.",
+    "common_mistake": "Nonzero entry count is unrelated to rank."
+  },
+  {
+    "id": "la-02-016",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "P is idempotent and invertible. Enter trace(P) for a 4×4 P.",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0
+    },
+    "solution_latex": "P²=P and invertibility imply P=I, whose trace is 4.",
+    "common_mistake": "An invertible projection has no zero eigendirections."
+  },
+  {
+    "id": "la-02-017",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter the rank of diag(1,0,1,0,1).",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "There are three nonzero diagonal pivots.",
+    "common_mistake": "Zeros contribute no rank."
+  },
+  {
+    "id": "la-02-018",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "For unit a=(3/5,4/5), enter 25 times the (1,1) entry of aaᵀ.",
+    "correct": [],
+    "nat_answer": {
+      "value": 9,
+      "tolerance": 0.01
+    },
+    "solution_latex": "The (1,1) entry is (3/5)²=9/25; scaling gives 9.",
+    "common_mistake": "Outer product entries multiply coordinates."
+  },
+  {
+    "id": "la-02-019",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "If A is 2×3 and B is 3×4, enter the number of entries in AB.",
+    "correct": [],
+    "nat_answer": {
+      "value": 8,
+      "tolerance": 0.01
+    },
+    "solution_latex": "AB is 2×4, hence has 8 entries.",
+    "common_mistake": "Inner dimensions cancel; outer dimensions remain."
+  },
+  {
+    "id": "la-02-020",
+    "subject": "linear-algebra",
+    "module": 2,
+    "topic": "Matrices & special matrices",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A 6×6 orthogonal projection has nullity 4. Enter its trace.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "Rank-nullity gives rank 2, and projection trace equals rank.",
+    "common_mistake": "Use ambient column count 6."
+  }
+]

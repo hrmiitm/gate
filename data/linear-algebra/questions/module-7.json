@@ -1,0 +1,414 @@
+[
+  {
+    "id": "la-07-001",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Singular values of A are square roots of eigenvalues of",
+    "options": [
+      "A",
+      "A+Aᵀ",
+      "AᵀA",
+      "A inverse"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "AᵀA is PSD and its eigenvalue square roots are singular values.",
+    "common_mistake": "Eigenvalues of A itself can be negative or complex."
+  },
+  {
+    "id": "la-07-002",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Singular values are always",
+    "options": [
+      "negative",
+      "nonnegative",
+      "complex nonreal",
+      "equal to eigenvalues"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "They are defined as nonnegative square roots.",
+    "common_mistake": "A negative eigenvalue does not produce a negative singular value."
+  },
+  {
+    "id": "la-07-003",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "In A=UΣVᵀ, columns of V are",
+    "options": [
+      "left singular vectors",
+      "right singular vectors",
+      "rows of A",
+      "eigenvalues"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "V contains right singular vectors, eigenvectors of AᵀA.",
+    "common_mistake": "U contains left singular vectors."
+  },
+  {
+    "id": "la-07-004",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Matrix rank equals",
+    "options": [
+      "number of nonzero singular values",
+      "largest singular value",
+      "sum of singular values",
+      "number of rows always"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Each nonzero singular value contributes one independent mapped direction.",
+    "common_mistake": "Tiny numerical values may need a tolerance in computation."
+  },
+  {
+    "id": "la-07-005",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The best rank-k approximation in Frobenius norm is obtained by",
+    "options": [
+      "keeping k smallest singular values",
+      "truncating to k largest singular values",
+      "zeroing diagonal of A",
+      "using LU only"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Eckart–Young says the truncated SVD is optimal.",
+    "common_mistake": "Largest components carry the most energy."
+  },
+  {
+    "id": "la-07-006",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "LU decomposition primarily factors A into",
+    "options": [
+      "two orthogonal matrices",
+      "lower and upper triangular matrices",
+      "eigenvectors and eigenvalues",
+      "two diagonal matrices"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Elimination multipliers form L and the echelon result is U.",
+    "common_mistake": "SVD is the orthogonal-diagonal-orthogonal factorization."
+  },
+  {
+    "id": "la-07-007",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which statements about SVD are true?",
+    "options": [
+      "Exists for every real rectangular matrix",
+      "Reveals rank",
+      "Supports a pseudoinverse",
+      "Requires A to be symmetric"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "SVD exists for any real matrix and directly supports rank and pseudoinverse computations.",
+    "common_mistake": "Symmetry is not required."
+  },
+  {
+    "id": "la-07-008",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If a zero pivot occurs during LU without pivoting, one may need",
+    "options": [
+      "row permutation",
+      "complex numbers always",
+      "SVD deletion",
+      "to make A symmetric"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Partial pivoting permutes rows, leading to PA=LU.",
+    "common_mistake": "A zero pivot does not imply the original matrix is singular."
+  },
+  {
+    "id": "la-07-009",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "The squared Frobenius norm equals",
+    "options": [
+      "sum of singular values",
+      "sum of squared singular values",
+      "largest singular value only",
+      "determinant"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Frobenius energy is Σσi².",
+    "common_mistake": "Nuclear norm is the unsquared sum."
+  },
+  {
+    "id": "la-07-010",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For centered data matrix X, PCA directions are tied to",
+    "options": [
+      "right singular vectors of X",
+      "LU multipliers",
+      "row swaps only",
+      "null vectors only"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Right singular vectors are eigenvectors of XᵀX, the unscaled covariance structure.",
+    "common_mistake": "Centering is essential before standard PCA."
+  },
+  {
+    "id": "la-07-011",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Enter singular values sum for diag(3,−2).",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "Singular values are |3| and |−2|, summing to 5.",
+    "common_mistake": "Do not preserve the negative sign."
+  },
+  {
+    "id": "la-07-012",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A matrix has singular values 5,2,0. Enter its rank.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "Exactly two singular values are nonzero.",
+    "common_mistake": "Rank counts nonzero values, not their sum."
+  },
+  {
+    "id": "la-07-013",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A matrix has singular values 4,3. Enter its squared Frobenius norm.",
+    "correct": [],
+    "nat_answer": {
+      "value": 25,
+      "tolerance": 0
+    },
+    "solution_latex": "The squared Frobenius norm is 4²+3²=25.",
+    "common_mistake": "Square before summing."
+  },
+  {
+    "id": "la-07-014",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For singular values 8,3,1, enter the spectral-norm error of the best rank-1 approximation.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "The discarded largest singular value is σ2=3.",
+    "common_mistake": "Spectral error differs from Frobenius error."
+  },
+  {
+    "id": "la-07-015",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For singular values 8,3,1, enter squared Frobenius error of the best rank-1 approximation.",
+    "correct": [],
+    "nat_answer": {
+      "value": 10,
+      "tolerance": 0
+    },
+    "solution_latex": "Discarded energy is 3²+1²=10.",
+    "common_mistake": "Frobenius error aggregates all discarded components."
+  },
+  {
+    "id": "la-07-016",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For nonsingular A with σmax=12 and σmin=3, enter its 2-norm condition number.",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0
+    },
+    "solution_latex": "κ2=σmax/σmin=12/3=4.",
+    "common_mistake": "Use the smallest nonzero singular value."
+  },
+  {
+    "id": "la-07-017",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Enter the elimination multiplier for row 2 when A=[[2,1],[6,5]] is factored by LU.",
+    "correct": [],
+    "nat_answer": {
+      "value": 3,
+      "tolerance": 0
+    },
+    "solution_latex": "The multiplier is a21/a11=6/2=3.",
+    "common_mistake": "Use the pivot before elimination."
+  },
+  {
+    "id": "la-07-018",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "For A=[[2,1],[6,5]], enter the second diagonal pivot of U.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "Row2−3Row1 gives [0,2], so u22=2.",
+    "common_mistake": "Apply the multiplier to the full row."
+  },
+  {
+    "id": "la-07-019",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A 7×4 matrix has full column rank. Enter number of positive singular values.",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0.01
+    },
+    "solution_latex": "Full column rank is 4, hence four nonzero positive singular values.",
+    "common_mistake": "There can be at most min(7,4)=4 singular values."
+  },
+  {
+    "id": "la-07-020",
+    "subject": "linear-algebra",
+    "module": 7,
+    "topic": "LU decomposition & Singular Value Decomposition",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A rank-2 matrix has shape 5×8. Enter rank of its Moore–Penrose pseudoinverse.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "The pseudoinverse reciprocates nonzero singular values and preserves rank.",
+    "common_mistake": "Its shape changes to 8×5, but rank does not."
+  }
+]

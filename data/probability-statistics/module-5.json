@@ -1,0 +1,57 @@
+{
+  "subject": "probability-statistics",
+  "subjectTitle": "Probability & Statistics",
+  "module": 5,
+  "title": "Descriptive statistics & moments",
+  "searchTerms": [
+    "mean",
+    "median",
+    "mode",
+    "variance",
+    "standard deviation",
+    "covariance",
+    "correlation",
+    "conditional expectation"
+  ],
+  "introduction": "Summary statistics compress a dataset or distribution. The exam tests whether you know exactly what information survives that compression—and how location, scale, and dependence change under transformations.",
+  "theory": [
+    "Mean is balance point, median is a quantile, and mode is peak frequency; they answer different questions. Variance measures squared spread around the mean.",
+    "Covariance captures linear co-movement and depends on units. Correlation standardizes it to $[-1,1]$ but zero correlation does not generally imply independence."
+  ],
+  "formulas": [
+    "Var(X)=E[X^2]-E[X]^2",
+    "Cov(X,Y)=E[XY]-E[X]E[Y]",
+    "Corr(X,Y)=\\frac{Cov(X,Y)}{\\sigma_X\\sigma_Y}",
+    "Var(aX+b)=a^2Var(X)",
+    "Var(X)=E[Var(X\\mid Y)]+Var(E[X\\mid Y])"
+  ],
+  "examples": [
+    {
+      "title": "Shift and scale",
+      "problem": "$Y=3X-2$, $E[X]=4$, $Var(X)=5$.",
+      "solution": "$E[Y]=10$ and $Var(Y)=9(5)=45$; shifts do not affect variance."
+    },
+    {
+      "title": "Covariance",
+      "problem": "$E[X]=1,E[Y]=2,E[XY]=5$.",
+      "solution": "$Cov(X,Y)=5-1\\cdot2=3$."
+    },
+    {
+      "title": "Update a mean",
+      "problem": "Five values average 8; append 14.",
+      "solution": "The old sum is 40, so the new mean is $(40+14)/6=9$."
+    },
+    {
+      "title": "Total variance",
+      "problem": "$E[Var(X\\mid Y)]=2$ and $Var(E[X\\mid Y])=3$.",
+      "solution": "$Var(X)=2+3=5$."
+    }
+  ],
+  "pitfalls": [
+    "Letting an additive shift change variance.",
+    "Treating zero correlation as independence without extra assumptions.",
+    "Using population and sample variance denominators interchangeably.",
+    "Forgetting the second term in the law of total variance."
+  ],
+  "whyGate": "These quantities drive standardization, regression, PCA covariance matrices, estimators, and uncertainty analysis."
+}

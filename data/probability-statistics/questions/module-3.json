@@ -1,0 +1,414 @@
+[
+  {
+    "id": "ps-03-001",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A Bernoulli random variable can take values",
+    "options": [
+      "$0$ only",
+      "$1$ only",
+      "$0$ and $1$",
+      "every nonnegative integer"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Bernoulli records one binary outcome, conventionally 0 or 1.",
+    "common_mistake": "Binomial, not Bernoulli, counts multiple successes."
+  },
+  {
+    "id": "ps-03-002",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If $X\\sim Bin(n,p)$, then $E[X]$ is",
+    "options": [
+      "$p$",
+      "$np$",
+      "$n(1-p)$",
+      "$np(1-p)$"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "A binomial is a sum of $n$ Bernoulli variables, so its mean is $np$.",
+    "common_mistake": "$np(1-p)$ is the variance."
+  },
+  {
+    "id": "ps-03-003",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "If $X\\sim Pois(\\lambda)$, which equality holds?",
+    "options": [
+      "$E[X]=\\lambda,Var(X)=\\lambda$",
+      "$E[X]=0,Var(X)=\\lambda$",
+      "$E[X]=\\lambda,Var(X)=\\lambda^2$",
+      "$E[X]=1/\\lambda$"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "For a Poisson variable both mean and variance equal the rate $\\lambda$.",
+    "common_mistake": "The exponential mean $1/\\lambda$ belongs to a different distribution."
+  },
+  {
+    "id": "ps-03-004",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which is a valid PMF property?",
+    "options": [
+      "$p(x)<0$ is allowed if totals cancel",
+      "$\\sum_xp(x)=1$",
+      "$p(x)$ must be increasing",
+      "$p(x)\\le1/n$ on $n$ points"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Masses are nonnegative and sum to one. No monotonicity is required.",
+    "common_mistake": "Individual masses need not be equal."
+  },
+  {
+    "id": "ps-03-005",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For discrete uniform $X$ on $\\{1,2,3,4,5\\}$, $E[X]$ is",
+    "options": [
+      "$2$",
+      "$2.5$",
+      "$3$",
+      "$3.5$"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The mean of consecutive endpoints is $(1+5)/2=3$.",
+    "common_mistake": "Include both endpoints in the support."
+  },
+  {
+    "id": "ps-03-006",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "The sum of independent $Pois(2)$ and $Pois(5)$ variables follows",
+    "options": [
+      "$Pois(3)$",
+      "$Pois(7)$",
+      "$Bin(7,1/2)$",
+      "$N(7,7)$ exactly"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Independent Poisson variables add their rates, giving $Pois(7)$.",
+    "common_mistake": "Normality is only an approximation at large rates."
+  },
+  {
+    "id": "ps-03-007",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For any integrable discrete random variables $X,Y$, which are true?",
+    "options": [
+      "$E[X+Y]=E[X]+E[Y]$",
+      "$E[3X]=3E[X]$",
+      "$E[XY]=E[X]E[Y]$ always",
+      "$E[c]=c$"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Expectation is linear and constants remain constants. Products factor only under suitable independence.",
+    "common_mistake": "Linearity does not require independence; product factorization does."
+  },
+  {
+    "id": "ps-03-008",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A count of successes in 12 independent trials with success probability .3 is modeled by",
+    "options": [
+      "$Bernoulli(.3)$",
+      "$Bin(12,.3)$",
+      "$Pois(.3)$",
+      "$Uniform\\{0,\\ldots,12\\}$"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Fixed trial count, identical probability, independence, and success count are the binomial setup.",
+    "common_mistake": "Bernoulli models only one trial."
+  },
+  {
+    "id": "ps-03-009",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For $X\\sim Bin(n,p)$, $P(X=0)$ equals",
+    "options": [
+      "$p^n$",
+      "$(1-p)^n$",
+      "$1-p^n$",
+      "$e^{-np}$ exactly"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Zero successes means all $n$ trials fail: $(1-p)^n$.",
+    "common_mistake": "$e^{-np}$ is a possible approximation, not the exact binomial value."
+  },
+  {
+    "id": "ps-03-010",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If $Y=2X+3$, then $Var(Y)$ is",
+    "options": [
+      "$2Var(X)+3$",
+      "$4Var(X)$",
+      "$4Var(X)+3$",
+      "$Var(X)+3$"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Variance scales by the square: $Var(2X+3)=4Var(X)$.",
+    "common_mistake": "The additive constant does not affect spread."
+  },
+  {
+    "id": "ps-03-011",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For $X\\sim Bin(10,0.2)$, enter $E[X]$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "$E[X]=np=10(.2)=2$.",
+    "common_mistake": "Do not use the variance formula."
+  },
+  {
+    "id": "ps-03-012",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For $X\\sim Bin(10,0.2)$, enter $Var(X)$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1.6,
+      "tolerance": 0.001
+    },
+    "solution_latex": "$Var(X)=np(1-p)=10(.2)(.8)=1.6$.",
+    "common_mistake": "Include the failure probability factor."
+  },
+  {
+    "id": "ps-03-013",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A PMF is $p(k)=ck$ for $k=1,2,3,4$. Enter $10c$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1,
+      "tolerance": 0
+    },
+    "solution_latex": "$c(1+2+3+4)=10c=1$, so the requested value is 1.",
+    "common_mistake": "Normalization uses the sum of all masses."
+  },
+  {
+    "id": "ps-03-014",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "For that PMF $p(k)=k/10$, enter $10E[X]$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 30,
+      "tolerance": 0
+    },
+    "solution_latex": "$E[X]=\\sum k(k/10)=(1+4+9+16)/10=3$, so $10E[X]=30$.",
+    "common_mistake": "Expectation multiplies each value by its probability."
+  },
+  {
+    "id": "ps-03-015",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If $X\\sim Pois(3)$, enter $1000P(X=0)$ rounded to two decimals.",
+    "correct": [],
+    "nat_answer": {
+      "value": 49.787068,
+      "tolerance": 0.01
+    },
+    "solution_latex": "$P(X=0)=e^{-3}$, so $1000e^{-3}\\approx49.787$.",
+    "common_mistake": "For $k=0$, $0!=1$ and $3^0=1$."
+  },
+  {
+    "id": "ps-03-016",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Independent Bernoulli variables have parameters .2 and .7. Enter $100E[X+Y]$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 90,
+      "tolerance": 0
+    },
+    "solution_latex": "Linearity gives $E[X+Y]=.2+.7=.9$, so the scaled answer is 90.",
+    "common_mistake": "No product is involved when adding expectations."
+  },
+  {
+    "id": "ps-03-017",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A fair die value is $X$. Enter $12E[X]$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 42,
+      "tolerance": 0
+    },
+    "solution_latex": "$E[X]=(1+2+3+4+5+6)/6=3.5$; multiplying by 12 gives 42.",
+    "common_mistake": "The support values, not just outcome counts, enter expectation."
+  },
+  {
+    "id": "ps-03-018",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A random variable has $E[X]=4$ and $E[X^2]=22$. Enter $Var(X)$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 6,
+      "tolerance": 0
+    },
+    "solution_latex": "$Var(X)=E[X^2]-E[X]^2=22-16=6$.",
+    "common_mistake": "Square the mean, not the second moment."
+  },
+  {
+    "id": "ps-03-019",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "Independent $X\\sim Bin(4,.5)$ and $Y\\sim Bin(6,.5)$. Enter $E[X+Y]$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "The sum is $Bin(10,.5)$, or use linearity: $2+3=5$.",
+    "common_mistake": "The common success probability is what also permits binomial aggregation."
+  },
+  {
+    "id": "ps-03-020",
+    "subject": "probability-statistics",
+    "module": 3,
+    "topic": "Random variables & discrete distributions",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "For $X\\sim Pois(4)$, enter $P(X=1)/P(X=0)$.",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0
+    },
+    "solution_latex": "The ratio is $(e^{-4}4)/(e^{-4})=4$.",
+    "common_mistake": "Cancel the common exponential factor before approximating."
+  }
+]

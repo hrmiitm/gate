@@ -1,0 +1,55 @@
+{
+  "subject": "linear-algebra",
+  "subjectTitle": "Linear Algebra",
+  "module": 2,
+  "title": "Matrices & special matrices",
+  "searchTerms": [
+    "matrix",
+    "orthogonal",
+    "projection",
+    "idempotent",
+    "partition",
+    "symmetric"
+  ],
+  "introduction": "Special matrices are compressed information: one property can determine eigenvalues, norms, inverses, or geometry without any entry-by-entry calculation.",
+  "theory": [
+    "Orthogonal matrices preserve inner products and lengths. Projection matrices map every vector onto a fixed subspace; orthogonal projections are both idempotent and symmetric.",
+    "Block/partition multiplication follows ordinary multiplication provided block dimensions conform. Never assume blocks commute."
+  ],
+  "formulas": [
+    "Q^TQ=I\\Rightarrow Q^{-1}=Q^T",
+    "P^2=P\\quad\\text{(idempotent)}",
+    "P_A=A(A^TA)^{-1}A^T",
+    "\\|Qx\\|_2=\\|x\\|_2",
+    "\\operatorname{tr}(P)=\\operatorname{rank}(P)\\quad\\text{for a projection}"
+  ],
+  "examples": [
+    {
+      "title": "Orthogonal inverse",
+      "problem": "$Q^TQ=I$.",
+      "solution": "Multiplying by definition shows $Q^T$ is the inverse: $Q^{-1}=Q^T$."
+    },
+    {
+      "title": "Line projection",
+      "problem": "Project onto the span of $a=(1,1)^T$.",
+      "solution": "$P=aa^T/(a^Ta)=\\frac12\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}$."
+    },
+    {
+      "title": "Idempotent eigenvalues",
+      "problem": "$Pv=\\lambda v$ and $P^2=P$.",
+      "solution": "$\\lambda^2v=\\lambda v$, so $\\lambda\\in{0,1}$."
+    },
+    {
+      "title": "Block product",
+      "problem": "$A=[B C]$ and $x=[u^T v^T]^T$.",
+      "solution": "Conforming multiplication gives $Ax=Bu+Cv$."
+    }
+  ],
+  "pitfalls": [
+    "Assuming every idempotent matrix is symmetric.",
+    "Confusing $A^TA=I$ with $A^2=I$.",
+    "Using the projection formula when columns of $A$ are dependent.",
+    "Reordering block products as if matrix multiplication commuted."
+  ],
+  "whyGate": "Orthogonal transformations and projections are the geometry behind least squares, PCA, and stable numerical computation."
+}

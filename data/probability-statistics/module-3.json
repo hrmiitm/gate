@@ -1,0 +1,55 @@
+{
+  "subject": "probability-statistics",
+  "subjectTitle": "Probability & Statistics",
+  "module": 3,
+  "title": "Random variables & discrete distributions",
+  "searchTerms": [
+    "pmf",
+    "bernoulli",
+    "binomial",
+    "poisson",
+    "discrete uniform",
+    "expectation"
+  ],
+  "introduction": "A random variable turns outcomes into numbers; a PMF tells you how probability is distributed across those numbers. Learn each family by its experiment, not by a detached formula.",
+  "theory": [
+    "Bernoulli models one success/failure trial. Binomial counts successes in a fixed number of independent identical trials. Poisson counts events in a fixed exposure when the rate is stable.",
+    "Expectation is linear even without independence. Variances add only when covariance terms vanish."
+  ],
+  "formulas": [
+    "P(X=k)={n\\choose k}p^k(1-p)^{n-k}\\quad(X\\sim Bin(n,p))",
+    "P(X=k)=e^{-\\lambda}\\frac{\\lambda^k}{k!}\\quad(X\\sim Pois(\\lambda))",
+    "E[X]=\\sum_x xp_X(x)",
+    "E[aX+b]=aE[X]+b",
+    "Var(X)=E[X^2]-E[X]^2"
+  ],
+  "examples": [
+    {
+      "title": "Binomial count",
+      "problem": "For $X\\sim Bin(5,.2)$, find $P(X=2)$.",
+      "solution": "${5\\choose2}(.2)^2(.8)^3=0.2048$."
+    },
+    {
+      "title": "Poisson additivity",
+      "problem": "$X\\sim Pois(2)$ and $Y\\sim Pois(3)$ independently.",
+      "solution": "$X+Y\\sim Pois(5)$, because independent Poisson rates add."
+    },
+    {
+      "title": "Linearity",
+      "problem": "$E[X]=3$ and $E[Y]=4$. Find $E[2X-Y+5]$.",
+      "solution": "$2(3)-4+5=7$. Independence is unnecessary."
+    },
+    {
+      "title": "PMF constant",
+      "problem": "$p(k)=c(k+1)$ for $k=0,1,2$.",
+      "solution": "Normalization gives $c(1+2+3)=1$, so $c=1/6$."
+    }
+  ],
+  "pitfalls": [
+    "Treating Poisson as continuous—it is discrete.",
+    "Using a binomial model when trial probabilities differ.",
+    "Assuming linearity of variance the way expectation is linear.",
+    "Forgetting that a PMF must sum to one over its full support."
+  ],
+  "whyGate": "These models recur in likelihoods, classifiers, queue/event counts, and the sampling theory used later."
+}

@@ -1,0 +1,55 @@
+{
+  "subject": "probability-statistics",
+  "subjectTitle": "Probability & Statistics",
+  "module": 7,
+  "title": "Statistical inference",
+  "searchTerms": [
+    "confidence interval",
+    "z test",
+    "t test",
+    "chi squared",
+    "hypothesis",
+    "p value"
+  ],
+  "introduction": "Inference turns a sample into a calibrated statement about a population. The core skill is choosing the statistic whose reference distribution matches the assumptions—not memorizing one universal test.",
+  "theory": [
+    "A confidence interval is a procedure with long-run coverage. A p-value is the probability, under the null model, of a result at least as extreme as the observed one; it is not the probability that the null is true.",
+    "Use z when the relevant standard error is known or justified asymptotically, t when estimating a normal mean with unknown variance, and chi-square for variance or categorical count procedures."
+  ],
+  "formulas": [
+    "\\bar x\\pm z_{\\alpha/2}\\frac{\\sigma}{\\sqrt n}",
+    "t=\\frac{\\bar x-\\mu_0}{s/\\sqrt n}",
+    "\\chi^2=\\sum\\frac{(O-E)^2}{E}",
+    "df_{\\text{independence}}=(r-1)(c-1)",
+    "\\text{reject }H_0\\text{ when }p\\le\\alpha"
+  ],
+  "examples": [
+    {
+      "title": "Known-variance interval",
+      "problem": "$\bar x=20,\\sigma=4,n=16$, use $z^*=1.96$.",
+      "solution": "Margin $=1.96(4/4)=1.96$, so the interval is $(18.04,21.96)$."
+    },
+    {
+      "title": "One-sample t",
+      "problem": "$\bar x=12,\\mu_0=10,s=4,n=16$.",
+      "solution": "$t=(12-10)/(4/4)=2$ with 15 degrees of freedom."
+    },
+    {
+      "title": "Table degrees of freedom",
+      "problem": "A $3\\times4$ contingency table.",
+      "solution": "$df=(3-1)(4-1)=6$."
+    },
+    {
+      "title": "Interpret p",
+      "problem": "$p=.03$ at $\\alpha=.05$.",
+      "solution": "Reject $H_0$. This does not mean $P(H_0)=.03$."
+    }
+  ],
+  "pitfalls": [
+    "Interpreting 95% confidence as a 95% posterior probability for a fixed parameter.",
+    "Using z instead of t for a small normal sample with unknown variance.",
+    "Accepting $H_0$ merely because it was not rejected.",
+    "Computing chi-square degrees of freedom from the number of cells."
+  ],
+  "whyGate": "Test selection and interpretation measure whether probability knowledge can support real statistical decisions."
+}

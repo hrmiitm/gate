@@ -1,0 +1,56 @@
+{
+  "subject": "linear-algebra",
+  "subjectTitle": "Linear Algebra",
+  "module": 7,
+  "title": "LU decomposition & Singular Value Decomposition",
+  "searchTerms": [
+    "lu",
+    "svd",
+    "singular value",
+    "pca",
+    "low rank",
+    "condition number"
+  ],
+  "introduction": "LU makes repeated linear solves efficient; SVD reveals the geometry and effective rank of any rectangular matrix. Together they bridge symbolic linear algebra and numerical data science.",
+  "theory": [
+    "LU factors elimination into a lower-triangular matrix and an upper-triangular matrix. Pivoting may be required, giving $PA=LU$.",
+    "SVD writes $A=USigma V^T$. Singular values are square roots of eigenvalues of $A^TA$; truncating the SVD gives the best low-rank approximation in Frobenius and spectral norm."
+  ],
+  "formulas": [
+    "A=LU\\quad\\text{or}\\quad PA=LU",
+    "A=U\\Sigma V^T",
+    "\\sigma_i(A)=\\sqrt{\\lambda_i(A^TA)}",
+    "\\|A\\|_F^2=\\sum_i\\sigma_i^2",
+    "A_k=U_k\\Sigma_kV_k^T",
+    "\\kappa_2(A)=\\sigma_{max}/\\sigma_{min}"
+  ],
+  "examples": [
+    {
+      "title": "A $2\\times2$ LU",
+      "problem": "$A=\\begin{bmatrix}2&1\\\\4&3\\end{bmatrix}$.",
+      "solution": "Elimination multiplier is 2, so $L=\\begin{bmatrix}1&0\\\\2&1\\end{bmatrix}$ and $U=\\begin{bmatrix}2&1\\\\0&1\\end{bmatrix}$."
+    },
+    {
+      "title": "Singular values",
+      "problem": "$A=\\operatorname{diag}(3,-2)$.",
+      "solution": "$A^TA=\\operatorname{diag}(9,4)$, so the singular values are 3 and 2—not 3 and −2."
+    },
+    {
+      "title": "Rank from SVD",
+      "problem": "Singular values are $5,2,0,0$.",
+      "solution": "Exactly two are nonzero, so rank is 2."
+    },
+    {
+      "title": "Best rank one",
+      "problem": "$A=U\\operatorname{diag}(6,2,1)V^T$.",
+      "solution": "Keep only the leading triplet. The spectral-norm error is $\\sigma_2=2$ and squared Frobenius error is $2^2+1^2=5$."
+    }
+  ],
+  "pitfalls": [
+    "Assuming LU without pivoting always exists.",
+    "Giving singular values a negative sign.",
+    "Computing singular values from eigenvalues of $A$ instead of $A^TA$.",
+    "Confusing PCA directions (right singular vectors of centered data) with raw feature columns."
+  ],
+  "whyGate": "SVD is exactly the machinery behind PCA, low-rank approximation, pseudoinverses, compression, and stable least squares."
+}

@@ -1,0 +1,54 @@
+{
+  "subject": "linear-algebra",
+  "subjectTitle": "Linear Algebra",
+  "module": 3,
+  "title": "Linear systems, elimination, rank & nullity",
+  "searchTerms": [
+    "linear system",
+    "gaussian elimination",
+    "rank",
+    "nullity",
+    "rref",
+    "consistency"
+  ],
+  "introduction": "Gaussian elimination is not just a solving algorithm. Its pivots expose rank, free variables, consistency, and the entire geometry of a linear system in one pass.",
+  "theory": [
+    "Elementary row operations preserve the solution set. In echelon form, pivots identify basic variables and non-pivot columns correspond to free variables.",
+    "A system $Ax=b$ is consistent exactly when $b$ lies in the column space of $A$, equivalently when $rank(A)=rank([Amid b])$."
+  ],
+  "formulas": [
+    "\\operatorname{rank}(A)+\\operatorname{nullity}(A)=n",
+    "Ax=b\\text{ consistent}\\iff\\operatorname{rank}(A)=\\operatorname{rank}([A\\mid b])",
+    "\\#\\text{free variables}=n-\\operatorname{rank}(A)",
+    "A\\in\\mathbb R^{m\\times n}:\\ \\operatorname{rank}(A)\\le\\min(m,n)"
+  ],
+  "examples": [
+    {
+      "title": "Free variables",
+      "problem": "A $3\\times5$ matrix has rank 3.",
+      "solution": "Nullity is $5-3=2$, so a homogeneous solution uses two free parameters."
+    },
+    {
+      "title": "Inconsistency row",
+      "problem": "Elimination produces $[0 0 0\\mid2]$.",
+      "solution": "This represents $0=2$, so no solution exists."
+    },
+    {
+      "title": "Unique solution",
+      "problem": "$A$ is square and has a pivot in every column.",
+      "solution": "$\\operatorname{rank}(A)=n$, so nullity zero and $Ax=b$ has a unique solution for every $b$."
+    },
+    {
+      "title": "Same row space",
+      "problem": "$B$ is obtained from $A$ by row operations.",
+      "solution": "Row operations preserve row space dimension and rank, though they generally change the column space itself."
+    }
+  ],
+  "pitfalls": [
+    "Using number of rows instead of number of columns in rank-nullity.",
+    "Saying row operations preserve the column space.",
+    "Calling a consistent system unique without checking free variables.",
+    "Missing an inconsistent augmented row."
+  ],
+  "whyGate": "Rank and solvability control regression uniqueness, redundant features, inverse problems, and low-dimensional representations."
+}

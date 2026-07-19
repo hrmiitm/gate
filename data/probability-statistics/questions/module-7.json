@@ -1,0 +1,414 @@
+[
+  {
+    "id": "ps-07-001",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A p-value is",
+    "options": [
+      "the probability the null is true",
+      "the probability under H0 of data at least as extreme as observed",
+      "the Type II error rate",
+      "always equal to α"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "The p-value is computed assuming the null and measures tail extremeness.",
+    "common_mistake": "It is not a posterior probability of H0."
+  },
+  {
+    "id": "ps-07-002",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "At α=0.05, a p-value of 0.03 leads to",
+    "options": [
+      "reject H0",
+      "accept H0 as true",
+      "increase α",
+      "no decision"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Because 0.03<0.05, reject H0.",
+    "common_mistake": "Rejection is not proof of a scientific claim."
+  },
+  {
+    "id": "ps-07-003",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For a small normal sample with unknown variance, a one-mean test uses",
+    "options": [
+      "z",
+      "t",
+      "chi-square independence",
+      "uniform"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Replacing unknown σ with s yields a t statistic with n−1 df.",
+    "common_mistake": "Do not silently treat s as known σ."
+  },
+  {
+    "id": "ps-07-004",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A Type I error means",
+    "options": [
+      "failing to reject a false null",
+      "rejecting a true null",
+      "accepting a true null",
+      "using a two-sided test"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Type I error is a false positive.",
+    "common_mistake": "Type II is failing to reject a false null."
+  },
+  {
+    "id": "ps-07-005",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "For an r×c contingency table, independence-test df is",
+    "options": [
+      "rc",
+      "r+c−2",
+      "(r−1)(c−1)",
+      "rc−1"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "After marginal constraints, (r−1)(c−1) deviations are free.",
+    "common_mistake": "Do not count every cell as free."
+  },
+  {
+    "id": "ps-07-006",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "A 95% confidence procedure means",
+    "options": [
+      "95% of fixed parameters lie in one interval",
+      "95% of intervals from repeated samples cover the parameter",
+      "H0 is true with probability .95",
+      "sample values lie within it"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Coverage is the long-run behavior of the random interval procedure.",
+    "common_mistake": "The classical parameter is fixed."
+  },
+  {
+    "id": "ps-07-007",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MSQ",
+    "marks": 1,
+    "difficulty": "foundation",
+    "source": "original",
+    "question_latex": "Which reduce a known-variance mean CI margin?",
+    "options": [
+      "Increase n",
+      "Use lower confidence",
+      "Increase σ",
+      "Decrease critical value"
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Margin is critical value times σ/√n.",
+    "common_mistake": "Higher confidence produces a wider interval."
+  },
+  {
+    "id": "ps-07-008",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Statistical power is",
+    "options": [
+      "P(reject H0 | H0 false)",
+      "P(reject H0 | H0 true)",
+      "1−α always",
+      "the p-value"
+    ],
+    "correct": [
+      "A"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Power is one minus Type II error under a specified alternative.",
+    "common_mistake": "Type I probability under H0 is α."
+  },
+  {
+    "id": "ps-07-009",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A two-sided alternative for μ0 is",
+    "options": [
+      "μ>μ0",
+      "μ<μ0",
+      "μ≠μ0",
+      "μ=μ0"
+    ],
+    "correct": [
+      "C"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Two-sided testing looks for departures in either direction.",
+    "common_mistake": "Equality belongs in H0."
+  },
+  {
+    "id": "ps-07-010",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "MCQ",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Expected count in cell (i,j) under independence is",
+    "options": [
+      "row+column total",
+      "row total×column total/grand total",
+      "observed/grand total",
+      "grand total/cells always"
+    ],
+    "correct": [
+      "B"
+    ],
+    "nat_answer": null,
+    "solution_latex": "Expected count is RiCj/N.",
+    "common_mistake": "Equal expectations require equal margins."
+  },
+  {
+    "id": "ps-07-011",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Known σ=10, n=100, sample mean=52. For H0:μ=50, enter z.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "z=(52−50)/(10/10)=2.",
+    "common_mistake": "Use the standard error σ/√n."
+  },
+  {
+    "id": "ps-07-012",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Sample mean=20, σ=4, n=16, z*=1.96. Enter the margin.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1.96,
+      "tolerance": 0.001
+    },
+    "solution_latex": "Margin=1.96·4/4=1.96.",
+    "common_mistake": "Margin is half interval width."
+  },
+  {
+    "id": "ps-07-013",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A one-sample t test has n=12. Enter degrees of freedom.",
+    "correct": [],
+    "nat_answer": {
+      "value": 11,
+      "tolerance": 0
+    },
+    "solution_latex": "df=n−1=11.",
+    "common_mistake": "One df is used estimating the mean."
+  },
+  {
+    "id": "ps-07-014",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "A chi-square independence test uses a 4×3 table. Enter df.",
+    "correct": [],
+    "nat_answer": {
+      "value": 6,
+      "tolerance": 0
+    },
+    "solution_latex": "(4−1)(3−1)=6.",
+    "common_mistake": "Subtract one before multiplying."
+  },
+  {
+    "id": "ps-07-015",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "Observed and expected counts are 12 and 8. Enter the chi-square contribution.",
+    "correct": [],
+    "nat_answer": {
+      "value": 2,
+      "tolerance": 0
+    },
+    "solution_latex": "(12−8)²/8=2.",
+    "common_mistake": "Square the difference."
+  },
+  {
+    "id": "ps-07-016",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "gate-standard",
+    "source": "original",
+    "question_latex": "If α=.05, enter 100P(Type I error) for an exact-size test.",
+    "correct": [],
+    "nat_answer": {
+      "value": 5,
+      "tolerance": 0
+    },
+    "solution_latex": "Type I probability equals α=.05; scaling gives 5.",
+    "common_mistake": "Condition on H0 being true."
+  },
+  {
+    "id": "ps-07-017",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A 90% z interval has z*=1.645, σ=6, n=36. Enter margin.",
+    "correct": [],
+    "nat_answer": {
+      "value": 1.645,
+      "tolerance": 0.001
+    },
+    "solution_latex": "Margin=1.645·6/6=1.645.",
+    "common_mistake": "Use the supplied two-sided critical value."
+  },
+  {
+    "id": "ps-07-018",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "To halve a known-variance interval margin, by what factor must n change?",
+    "correct": [],
+    "nat_answer": {
+      "value": 4,
+      "tolerance": 0
+    },
+    "solution_latex": "Margin scales as 1/√n.",
+    "common_mistake": "Doubling n only multiplies margin by 1/√2."
+  },
+  {
+    "id": "ps-07-019",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "In a table with row total 40, column total 30, grand total 100, enter expected count.",
+    "correct": [],
+    "nat_answer": {
+      "value": 12,
+      "tolerance": 0
+    },
+    "solution_latex": "Expected count is 40·30/100=12.",
+    "common_mistake": "Use both margins."
+  },
+  {
+    "id": "ps-07-020",
+    "subject": "probability-statistics",
+    "module": 7,
+    "topic": "Statistical inference",
+    "type": "NAT",
+    "marks": 2,
+    "difficulty": "challenge",
+    "source": "original",
+    "question_latex": "A test has power 0.8. Enter its Type II error probability.",
+    "correct": [],
+    "nat_answer": {
+      "value": 0.2,
+      "tolerance": 0.001
+    },
+    "solution_latex": "Power=1−β, so β=.2.",
+    "common_mistake": "Do not confuse β with α."
+  }
+]
